@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block pagetitle %}Contact form{% endblock %}
+{% block swipper %} 
+    <section data-handler="free-block" data-method="swipper">
+        <figure>
+            <picture>
+                <source srcset="{{ imagepath }}/team-7_1500x630.jpg" media="(min-width: 1200px)">
+                <img src="{{ imagepath }}/team-7_1500x630.jpg" alt="" class="panel-image">
+            </picture>
+            <figcaption>
+                <h5>
+                    {{ hotelname }}                                                                                  
+                </h5>
+                <h2>Speak with us</h2>
+            </figcaption>
+        </figure>
+    </section>
+{% endblock %}
+{% block content %}
+    <!-- Contact form -->
+    <article data-handler="file" data-method="display">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>
+                        Do you have a question?
+                    </h5>
+                    <h2>Contact us</h2>
+                    <p>Please fill up all mandatory fields.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    {% include "contact-form.html" %}
+                </div>
+            </div>
+        </div>
+    </article> 
+    <!-- contactpersons teaser block -->
+    <section data-handler="contactpersons" data-method="teaser">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Our team is here for you</h5>
+                    <h2>Contactpersons</h2>
+                </div>
+            </div>
+            <div class="row">
+                {% for contactperson in contactpersons %}
+                <article>
+                    <div class="card"> 
+                        <div class="image"> 
+                            <a href="{{ contactperson.link }}">  
+                                <picture>
+                                    <img src="{{ imagepath }}/{{ contactperson.hero }}_414x414.jpg" alt="{{ contactperson.title }}" class="w-100">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="body">
+                            <h5><a href="{{ contactperson.link }}">{{ contactperson.title }}</a></h5>                   
+                            <p>{{ contactperson.position }}</p>
+                            <a href="{{ contactperson.link }}" class="btn-details">
+                                <span data-hover="{{ contactperson.title }}">Read more about...</span>
+                            </a>
+                        </div>
+                    </div>
+                </article> 
+                {% endfor %}
+            </div>            
+        </div>
+    </section>
+    {% include "reviews.html" %}
+    {% include "map.html" %}
+{% endblock %}

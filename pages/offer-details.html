@@ -1,0 +1,195 @@
+{% extends "layout.html" %}
+{% block pagetitle %} Offer details {% endblock %}
+{% block swipper %} 
+    <!-- swipper with images and captions -->
+    <div data-handler="free-block" data-method="swipper">
+        {% for offer in offers %}
+            {% if loop.first %}
+                <section class="hero" data-handler="free-block" data-method="swipper">
+                    <figure>
+                        <picture>
+                            {%if offer.hero %}
+                                <img src="{{ imagepath }}/{{ offer.hero }}_1500x630.jpg" alt="{{ offer.title }}">
+                            {% else %}
+                                <img src="{{ imagepath }}/1500x630.jpg" alt="{{ offer.title }}">
+                            {% endif %}
+                        </picture>
+                        <figcaption>
+                            <p class="h5">
+                                {{ hotelname }} Offers                                         
+                            </p>
+                            <h1>{{ offer.title }}</h1>
+                        </figcaption>
+                    </figure>
+                </section>
+            {% endif %}
+        {% endfor %}
+        {% include "bookingbar.html" %}
+    </div>  
+{% endblock %}
+{% block content %}
+    {% for offer in offers %}
+        {% if loop.first %}
+        <article data-handler="offer" data-method="details">
+            <div class="row">
+                <!-- left | title + price + text + buttons + facilities + images -->
+                <div class="col-12 col-md-8">
+                    <div data-step="description">
+                        <p class="h5">{{ currency }}{{ offer.price }} for {{ offer.nights }} nights</p>
+                        <h2>{{ offer.title }}</h2>
+                        <p>
+                            {{ offer.text }}
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        </p>
+                    </div>    
+                    <div data-step="buttons">
+                        <a class="btn-details btn-border" data-toggle="modal" data-target="#offer-request">
+                            <i class="icon-website-chart"></i>
+                            <span data-hover="infos"> 
+                                 Request  
+                            </span>
+                        </a>
+                        <a class="btn-details btn-border" href="{{ bookinglink }}" target="_blank">
+                            <i class="icon-website-calendar"></i>
+                            <span data-hover="for this offer"> 
+                                Check avalability
+                            </span>
+                        </a>
+                    </div>
+                    <div data-step="extras">
+                        <h5>This package includes</h5>
+                        {% include "includes.html" %}
+                    </div>
+                    <div data-step="rooms">
+                        <div class="card">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                    <th>Rooms</th>
+                                        <th class="text-center text-sm-left">1 <span class="d-none d-sm-inline">Person</span><i class="d-inline d-sm-none icon-website-user"></i></th>
+                                        <th class="text-center text-sm-left">2 <span class="d-none d-sm-inline">Persons</span><i class="d-inline d-sm-none icon-website-user"></i></th>
+                                        <th class="text-center text-sm-left">3 <span class="d-none d-sm-inline">Persons</span><i class="d-inline d-sm-none icon-website-user"></i></th>
+                                        <th class="text-center text-sm-left">4 <span class="d-none d-sm-inline">Persons</span><i class="d-inline d-sm-none icon-website-user"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for room in rooms %}
+                                    <tr>
+                                        <td><a href="{{ room.link }}">{{ room.title }}</a></td>
+                                        <td><span class="d-none d-sm-inline">from </span>{{ currency }} {{ room.price }}</td>
+                                        <td><span class="d-none d-sm-inline">from </span>{{ currency }} {{ room.price * 1.5|round }}</td>
+                                        {% if loop.index > 1 %}
+                                        <td><span class="d-none d-sm-inline">from </span>{{ currency }} {{ room.price * 2|round }}</td>
+                                        <td><span class="d-none d-sm-inline">from </span>{{ currency }} {{ room.price * 2.5|round }}</td>
+                                        {% else %}
+                                        <td></td>
+                                        <td></td>
+                                        {% endif %}
+                                    </tr>
+                                    {% endfor %}                                                                              
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- right | characteristics -->
+                <div class="col-12 col-md-4">
+                    <div data-step="tables">
+                        <div class="card">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Period of time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>02.01. - 30.04.2018</td>
+                                        <td>Monday till sunday</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.05. - 30.09.2018</td>
+                                        <td>Monday till friday</td>
+                                    </tr>                     
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div data-step="gallery">
+                        <!-- gallery | more then 3 use carousel -->
+                        <div class="card">
+                            <img src="{{ imagepath }}/offer-1_414x414.jpg" alt="">
+                        </div> 
+                        <div class="card">
+                            <img src="{{ imagepath }}/offer-2_414x414.jpg" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="{{ imagepath }}/offer-3_414x414.jpg" alt="">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!-- WEB-539 calendar.js (footer) calendar.scss import in styles.scss -->
+            <div class="row" data-step="availability">
+                <div class="col-12 col-md-8">
+                    <div class="row py-0">
+                        <div id="calendar1" class="col-12 col-md-6 mb-lg-0 mb-3"></div> 
+                        <div id="calendar2" class="col-12 col-md-6 mb-lg-0 mb-3"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="form-group">
+                        <label for="arrivaldate">When do you wish to arrive?</label>
+                        <input type="date" name="arrivaldate" id="arrivaldate" class="form-control" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="nights">How many nights you would like to stay?</label>
+                        <select name="nights" id="nights" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        </select> 
+                    </div>
+                    <div class="form-group">
+                        <label for="persons">For occupancy with how many persons?</label>
+                        <select name="persons" id="persons" class="form-control">
+                        <option>1 adult</option>
+                        <option>2 adults</option>
+                        </select> 
+                    </div>          
+                    <div class="form-group">
+                        <a class="btn-details btn-primary" href="{{ bookinglink }}" target="_blank">
+                            <i class="icon-website-calendar"></i>
+                            <span data-hover="offer now"> 
+                                 Book this
+                            </span>
+                        </a>
+                    </div>          
+                </div>
+            </div>
+        </article>
+        <div class="modal" id="offer-request">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Request informations about {{ offer.title }}</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        {% include "contact-form.html" %}
+                    </div>
+                </div>
+            </div>
+        </div>       
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% block specialscripts %}
+<!-- WEB-539 | calendar.js popper.js only if we dont have bootstrap.bundle.js and with fake js file for testing -->
+    <script src="https://media.busyrooms.co/js/calendar/moment.min.js"></script>
+    <script src="https://media.busyrooms.co/js/calendar/calendar.js"></script>
+    <script src="https://media.busyrooms.co/js/calendar/calendar-theme-static.js"></script>
+{% endblock %}

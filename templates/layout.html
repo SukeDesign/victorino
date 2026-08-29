@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ hotelname }}:{% block pagetitle %} {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.png">
+    <link href="https://media.busyrooms.co/css/font-poppins.css" rel="stylesheet">
+    <link href="https://media.busyrooms.co/css/font-roboto.css" rel="stylesheet">
+    <link href="https://media.busyrooms.co/css/font-brush.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ csspath }}/styles.css?1.07">
+</head>
+<body>
+<header>
+    {% include "topbar.html" %}
+    {% include "nav.html" %}
+    {% block swipper %}    
+    {% endblock %}
+</header>
+<main>
+    {% block content %} 
+    {% endblock %}
+</main>
+{% include "footer.html" %}
+<a class="scroll-to-top">
+    <i class="icon-website-chevron-up"></i>
+</a>
+<script src="{{ jspath }}/plugins.js?1.08"></script>
+{% block specialscripts %} {% endblock %}
+<script src="{{ jspath }}/app.js?1.08"></script>
+<script src="{{ jspath }}/lazysizes.min.js?1.08"></script>
+
+<!-- booking mask if addajet 1.3 -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://api.direct-reservation.net/search/1.3/jquery.addajet.search.min.js"></script>
+<!-- booking mask fake data -->
+<script>
+    $(document).ready(function () {
+        // datepicker 
+        var months = 2;
+        if ($(window).width() < 667) {
+            var months = 1;
+        };
+        $("#addaJetSearchBox").search({ 
+            websiteID: 147, 
+            combinations: [ 
+                "accommodation"
+            ], 
+            settings: { 
+                showCodes: true,
+                showLabels: false,
+                datePicker: { 
+                    minimimNights: 1, 
+                    minimumDate: 0, 
+                    months: months,
+                    format: "dd/mm/yy", 
+                    fillDates: true 
+                }, 
+                accommodation: { 
+                    showEstablishments: false 
+                } 
+            }, 
+            groups: { 
+                accommodation: 
+                { 
+                    maxGroups: 2,// victorino only 2
+                    maxAdults: 2, 
+                    maxChildren: 3, 
+                    maxChildAge: 17 
+                }, 
+            }, 
+            languages: { 
+                searchBox: { 
+                    combinations: { 
+                        accommodation: "Accommodation"
+                    } 
+                } 
+            }
+        }); // search
+        // show + hide rooms with adults and children
+        $("#numberOfGroupsInput1").click(function () {
+            $("#groupsContainer1").show();
+        });
+        /* if click outside the select and the collapse div, close it */
+        $(document).click(function (e) {
+            if (!$(e.target).is("#numberOfGroupsInput1") 
+                && $(e.target).parents("#groupsContainer1").length === 0) 
+            {
+                $("#groupsContainer1").hide();
+            }
+        });   
+        // Default adults to 2
+        $("#groupAdultsInput1_1 OPTION:nth-child(3)").attr("selected","selected");
+        // Change adults dropdown to read '2 Adults" instead of just '2'
+        let adults_txt = $("#groupAdultsInput1_1 OPTION:first-child").text();
+        $(".groupAdultsInput OPTION:not(:first-child)").each(function(){
+            let $this = $( this );
+            $this.html( $this.val() + " " + adults_txt);
+        });
+    }); // ready
+</script>
+
+<!-- extensions page -->
+<script>
+    jQuery(document).ready(function(){  
+        if ( jQuery('.modal.opened').length > 0 ) {
+          jQuery('.modal.opened').modal('show');
+        };
+    });
+</script>
+</body>
+</html>

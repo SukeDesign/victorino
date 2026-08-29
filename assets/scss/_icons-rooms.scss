@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'rooms';
+  src: url('https://themes.busyrooms.co/themes/victorino/assets/fonts/rooms.eot?40207016');
+  src: url('https://themes.busyrooms.co/themes/victorino/assets/fonts/rooms.eot?40207016#iefix') format('embedded-opentype'),       
+       url('https://themes.busyrooms.co/themes/victorino/assets/fonts/rooms.woff?40207016') format('woff'),
+       url('https://themes.busyrooms.co/themes/victorino/assets/fonts/rooms.ttf?40207016') format('truetype'),
+       url('https://themes.busyrooms.co/themes/victorino/assets/fonts/rooms.svg?40207016#rooms') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icon-rooms';
+    src: url('../font/icon-rooms.svg?40207016#icon-rooms') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-rooms-"]:before, [class*=" icon-rooms-"]:before {
+  font-family: "rooms";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-rooms-baggage-cart:before { content: '\e8003'; } /* '\e8003' */
+.icon-rooms-hanger:before { content: '\e8013'; } /* '\e8013' */
+.icon-rooms-king-size-bed:before { content: '\e80b3'; } /* '\e80b3' */
+.icon-rooms-buttler:before { content: '\e8033'; } /* '\e8033' */
+.icon-rooms-radio:before { content: '\e8043'; } /* '\e8043' */
+.icon-rooms-reception:before { content: '\e8053'; } /* '\e8053' */
+.icon-rooms-sunlounger:before { content: '\e8063'; } /* '\e8063' */
+.icon-rooms-swimmingpool:before { content: '\e8073'; } /* '\e8073' */
+.icon-rooms-swimming:before { content: '\e8083'; } /* '\e8083' */
+.icon-rooms-bathtub:before { content: '\e8093'; } /* '\e8093' */
+.icon-rooms-extra-bed:before { content: '\e80a3'; } /* '\e80a3' */
+.icon-rooms-twin-beds:before { content: '\e80c3'; } /* '\e80c3' */
+.icon-rooms-bunker-beds:before { content: '\e80d3'; } /* '\e80d3' */
+.icon-rooms-tv:before { content: '\e80e3'; } /* '\e80e3' */
+.icon-rooms-gym:before { content: '\e80f3'; } /* '\e80f3' */
+.icon-rooms-shower:before { content: '\e8103'; } /* '\e8103' */

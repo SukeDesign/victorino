@@ -1,0 +1,236 @@
+{% extends "layout.html" %}
+{% block pagetitle %} Restaurant details {% endblock %}
+{% block swipper %} 
+    <!-- swipper with images and captions -->
+    <div data-handler="free-block" data-method="swipper">
+        {% for restaurant in restaurants %}
+            {% if loop.first %}
+                <section class="hero" data-handler="free-block" data-method="swipper">
+                    <figure>
+                        <picture>
+                            {%if restaurant.hero %}
+                                <img src="{{ imagepath }}/{{ restaurant.hero }}_1500x630.jpg" alt="{{ restaurant.title }}">
+                            {% else %}
+                                <img src="{{ imagepath }}/1500x630.jpg" alt="{{ restaurant.title }}">
+                            {% endif %}
+                        </picture>
+                        <figcaption>
+                            <p class="h5">
+                                {{ hotelname }} Gastronomy                                         
+                            </p>
+                            <h1>{{ restaurant.title }}</h1>
+                        </figcaption>
+                    </figure>
+                </section>
+            {% endif %}
+        {% endfor %}
+    </div>  
+{% endblock %}
+{% block content %}
+    {% for restaurant in restaurants %}
+        {% if loop.first %}
+        <article data-handler="restaurant" data-method="details">
+            <div class="row">
+                <!-- left | title + price + text + buttons + facilities + images -->
+                <div class="col-12 col-md-8">
+                    <div data-step="description">
+                        <h2>{{ restaurant.title }}</h2>
+                        <p>
+                            {{ restaurant.text }}
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        </p>
+                        <p>                        
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        </p>
+                    </div>
+                    <div data-step="buttons">
+                        <a class="btn-details btn-border" data-toggle="modal" data-target="#restaurant-request">
+                            <i class="icon-website-outdoors"></i>
+                            <span data-hover="a table"> 
+                                 Reserve  
+                            </span>
+                        </a>
+                        <a class="btn-details btn-border" href="restaurant-menu-card.html" target="_blank">
+                            <i class="icon-website-roomservice"></i> 
+                            <span data-hover="Preview"> 
+                                Menu Card
+                            </span>
+                        </a>
+                    </div>
+                    <!-- facilities -->
+                    <div data-step="list">
+                        <h5>Amenities</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="icon-website-check"></i>
+                                smoking area 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                wheelchair accessible
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                air condition
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                elevator 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                garden area 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                sea view 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                terrasse 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                bathtub/shower 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                play area for children 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                WIFI
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- right | characteristics -->
+                <div class="col-12 col-md-4">
+                    <div data-step="tables">
+                        <div class="card"> 
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Details</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Number of seats:</td>
+                                        <td>{{ restaurant.seats }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Number of tables:</td>
+                                        <td>{{ restaurant.tables }}</td>
+                                    </tr>                     
+                                    <tr>
+                                        <td>
+                                            <span class="d-none d-sm-inline">Payments:</span>
+                                            <span class="d-sm-none d-inline">Payments:</span>
+                                        </td>
+                                        <td>
+                                            <i class="lead icon-payment-cash" title="cash"></i>
+                                            <i class="lead icon-payment-eccash" title="EC"></i>
+                                            <i class="lead icon-payment-visa" title="VISA"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div>
+                        <div class="card"> 
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Restaurant Opening hours</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Monday till saturday</td>
+                                        <td>10 am till 11 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday</td>
+                                        <td>10 am till 10 pm</td>
+                                    </tr>                     
+                                </tbody>
+                            </table>      
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Kitchen Opening hours</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Monday till saturday</td>
+                                        <td>9 am till 10 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday</td>
+                                        <td>9 am till 9 pm</td>
+                                    </tr>                     
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- gallery | more then 3 use carousel -->
+                        <div data-step="gallery">
+                            <div class="card">
+                                <div id="restaurant-details-carousel" class="carousel carousel-fade slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="{{ imagepath }}/gastronomy-72_414x414.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{ imagepath }}/gastronomy-71_414x414.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{ imagepath }}/gastronomy-70_414x414.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{ imagepath }}/gastronomy-8_414x414.jpg" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{ imagepath }}/gastronomy-3_414x414.jpg" alt="">
+                                        </div>                                 
+                                        <div class="carousel-item">
+                                            <img src="{{ imagepath }}/gastronomy-13_414x414.jpg" alt="">
+                                        </div>      
+                                        <div class="carousel-item">
+                                            <img src="{{ imagepath }}/gastronomy-10_414x414.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#restaurant-details-carousel" role="button" data-slide="prev">
+                                       <i class="display-4 icon-website-chevron-left" aria-hidden="true"></i>
+                                       <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#restaurant-details-carousel" role="button" data-slide="next">
+                                       <i class="display-4 icon-website-chevron-right" aria-hidden="true"></i>
+                                       <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>  
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="modal" id="restaurant-request">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Reserve a table in {{ restaurant.title }}</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        {% include "contact-form.html" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

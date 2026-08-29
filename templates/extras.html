@@ -1,0 +1,41 @@
+<!-- extras with price -->
+    <div class="accordion" id="extras">
+        {% for extra in extras %}
+        <div class="card">
+            <div class="header" id="extras-header-{{ loop.index }}" data-toggle="collapse" data-target="#extras-collapse-{{ loop.index }}" aria-expanded="false" aria-controls="extras-collapse-{{ loop.index }}">
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <i class="icon-website-plus"></i>&nbsp;{{ extra.title }}  
+                    </div>
+                    <div class="col-6 text-right">
+                        <span class="d-none d-sm-inline">Price</span> {{ extra.unit }}: <span class="float-sm-right">&euro;{{ extra.price }}</span>
+                    </div>
+                </div>
+            </div>
+            <div id="extras-collapse-{{ loop.index }}" class="collapse" aria-labelledby="extras-header-{{ loop.index }}" data-parent="#extras">
+                <div class="body">
+                    <div class="row">
+                        {% if extra.hero %}
+                        <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                            <img class="img-fluid" src="{{ imagepath }}/{{ extra.hero }}.jpg" alt="{{ extra.title }}">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h6>{{ extra.period }}</h6>
+                            <p>
+                                {{ extra.text }}
+                            </p> 
+                        </div>
+                        {% else %}
+                        <div class="col-12">
+                            <h6>{{ extra.period }}</h6>
+                            <p>
+                                {{ extra.text }}
+                            </p> 
+                        </div>
+                        {% endif %}
+                    </div>                               
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>               

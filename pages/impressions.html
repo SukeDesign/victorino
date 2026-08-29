@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block pagetitle %} Hotel impressions {% endblock %}
+{% block swipper %} 
+    {% include "swipper.html" %} 
+{% endblock %}
+{% block content %}
+    <!-- //css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout -->
+    <section data-handler="free-block" data-method="image-gallery-masonry">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>{{ hotelname }} Impressions</h5>
+                    <h2>Block Image gallery with masonry columns</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div data-step="gallery-grid">
+                    {% for i in range(1, 20) %}
+                    <div class="gallery-item" data-toggle="lightbox" data-gallery="image-gallery" data-title="hotel {{ i }}" href="{{ imagepath }}/hotel-{{ i }}_1500x630.jpg">                       
+                        <img src="{{ imagepath }}/hotel-{{ i }}_414x414.jpg" alt="Image #{{ loop.index}}" >
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Images | NEW: PARALLAX WINDOW -->
+    <section data-handler="free-block" class="parallax-window" data-parallax="scroll" data-image-src="{{ imagepath }}/hotel-22_1500x630.jpg" data-natural-width="1500" data-natural-height="630">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5 class="title">{{ hotelname }} Impressions</h5>
+                    <h2>Block Image with parallax</h2>
+                    <p>You can add text here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- video block -->
+    <section data-handler="free-block" data-method="hotel-video">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="video-image"> 
+                        <img src="{{ imagepath }}/video.jpg" alt="Hotel video"> 
+                        <a href="#">
+                            <i class="icon-website-zoom-in"></i>
+                        </a> 
+                    </div>
+                    <h2>Welcome in {{ hotelname }}</h2>
+                    <p>Say something about Hotel video</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

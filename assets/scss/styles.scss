@@ -1,0 +1,123 @@
+// Define all variables in main style file including default values
+/* for me only */
+$white:rgb(255,255,255);
+$black:rgb(0,0,0);
+$grey:rgb(127,127,127);
+
+/* backend variables */
+$primary:rgb(150, 171, 154);//green blue
+$secondary:rgb(151, 150, 153);// grey
+$third:rgb(239, 193, 141);//yellow
+$fourth:rgb(230, 136, 98);//orange
+$fifth:rgb(224, 159, 189);//pink
+
+$light:lighten($secondary,25%);
+$medium:lighten($secondary,10%); // slick dots
+$dark:#373738;
+
+/* fonts => import in head */
+$font-family-1:'Poppins',sans-serif;
+$font-family-2:'Roboto',sans-serif;
+
+$text-color:$dark;
+$headlines-color:$secondary;
+
+$link-color:$primary;
+$link-color-hover:darken($primary,35%);
+
+$topbar-bg:$primary;
+$topbar-border:rgba($white,.5);
+$topbar-color:rgba($white,.9);
+
+$nav-bg:rgba($white,1);
+$nav-color:$black;
+$nav-color-hover:$primary;
+
+$swipper-bg:$light;
+$swipper-color:$white;
+
+$booking-form-bg: $white;
+$booking-form-color: $black;
+$booking-form-fields-bg: $white;
+$booking-form-fields-color: $black;
+$booking-form-fields-border: $medium;
+$booking-form-btn-bg: $fourth;
+$booking-form-btn-color: $white;
+$booking-form-btn-bg-hover: $secondary;
+
+$main-bg: $white;
+
+$main-block-bg:$light;
+$main-block-headline:$headlines-color;
+$main-block-color:$text-color;
+$main-block-shadows:0 15px 30px 0 rgba(0,0,0,0.07);
+
+$teaser-bg:$white;
+$teaser-color:$text-color;
+$teaser-btn-bg:$white;
+$teaser-btn-color:$fifth;
+$teaser-btn-border:$fifth;
+$teaser-price-bg:$fifth;
+$teaser-price-color:$white;
+
+$grid-item-color:$white;//mosaic and masonry
+
+$highlights-bg:$third;
+$highlights-headline:$white;
+$highlights-color:$white;
+
+$table-bg:$secondary;
+$table-color:$text-color;
+$table-border:$light;
+
+$promotion-bg:$primary;
+$promotion-color:$white;
+$promotion-btn-bg:$white;
+$promotion-btn-color:$primary;
+$promotion-btn-border:$white;
+
+$reviews-bg:$fourth;
+$reviews-color:$white;
+$reviews-border:$light;
+
+$newsletter-bg:$black;
+$newsletter-color:$white;
+$newsletter-btn-bg:$fourth;
+$newsletter-btn-color:$white;
+$newsletter-btn-border:$white;
+
+$footer-bg-color:$dark;
+$footer-bg:url(../images/footer.png) repeat $footer-bg-color;
+$footer-color:$white;
+
+// This line needs to be there before importing all other files to ensure the Compiler is working correctly
+// There is no need for am include file with that name
+@import "variableInputs"; 
+
+// for this theme
+@import "icons-flags";
+@import "icons-directions";
+@import "icons-payment";
+@import "icons-reviews";
+@import "icons-services";
+@import "icons-social";
+@import "icons-seatings";
+@import "icons-shop";
+@import "icons-website";
+@import "icons-hotel";
+@import "icons-rooms";
+@import "icons-facilities";
+@import "ekko-lightbox";
+@import "bootstrap";
+@import "animate";
+@import "slick";
+@import "slick-theme";
+@import "calendar";
+@import "calendar-theme";
+@import "theme";
+@import "responsive";
+@import "datepicker";
+@import "addajet-booking-mask";
+// This line needs to be there as last element to insert additional CSS from Theme Config
+// There is no need for an include file with that name
+@import "additionalScss";        

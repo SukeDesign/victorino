@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'seatings';
+  src:  url('https://media.busyrooms.co/fonts/icomoon/seatings.eot?njtrg4');
+  src:  url('https://media.busyrooms.co/fonts/icomoon/seatings.eot?njtrg4#iefix') format('embedded-opentype'),
+    url('https://media.busyrooms.co/fonts/icomoon/seatings.ttf?njtrg4') format('truetype'),
+    url('https://media.busyrooms.co/fonts/icomoon/seatings.woff?njtrg4') format('woff'),
+    url('https://media.busyrooms.co/fonts/icomoon/seatings.svg?njtrg4#seatings1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-seat-"], [class*=" icon-seat-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'seatings' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-seat-ball:before {
+  content: "\e968";
+}
+.icon-seat-circle:before {
+  content: "\e96a";
+}
+.icon-seat-ushape:before {
+  content: "\e96d";
+}
+.icon-seat-ushapein:before {
+  content: "\e970";
+}
+.icon-seat-tshape:before {
+  content: "\e973";
+}
+.icon-circle:before {
+  content: "\e90d";
+}
+.icon-all-out:before {
+  content: "\e967";
+}
+.icon-seat-block:before {
+  content: "\e5c3";
+}
+.icon-city-center:before {
+  content: "\e3b4";
+}
+.icon-dashboard:before {
+  content: "\e871";
+}
+.icon-seat-parliamentary:before {
+  content: "\e0bc";
+}
+.icon-seat-rows:before {
+  content: "\e5d2";
+}
+.icon-seat-banquet:before {
+  content: "\e162";
+}
+.icon-seat-cinema:before {
+  content: "\e8c3";
+}
+.icon-seat-reception:before {
+  content: "\e430";
+}

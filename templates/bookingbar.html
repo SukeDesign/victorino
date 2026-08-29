@@ -1,0 +1,28 @@
+    <!-- booking form -->
+    <div class="booking-bar">
+        <form class="form-inline" name="booking-form" action="{{ bookinglink }}" target="_blank">
+            <div class="col-12 col-sm-3 col-lg-3"> 
+                <div class="form-item datepicker arrival">
+                    <i class="icon-website-calendar"></i>
+                    <input class="form-control date-arrival" type="text" id="start-date" name="start" placeholder="Arrival"/>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3 col-lg-3"> 
+                <div class="form-item datepicker departure">
+                    <i class="icon-website-calendar"></i>
+                    <input class="form-control date-departure" type="text" id="end-date" name="end" placeholder="Departure"/>
+                </div>
+            </div>
+            <div class="col-12 col-sm-2 col-lg-3">
+                    <div class="form-item">
+                        <i class="icon-website-user"></i>
+                        <input class="form-control" name="adults" type="text" placeholder="2 Adults"/>
+                    </div>                            
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3">
+                <a class="btn btn-book" href="{{ bookinglink }}" target="_blank">
+                    <span>Book now</span>
+                </a>
+            </div>
+        </form>
+    </div> 

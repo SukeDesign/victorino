@@ -1,0 +1,57 @@
+<div class="accordion" id="extras-with-categories">
+    {% for extrascategorie in extrascategories %}
+    <div class="card">
+        <!-- category {{ loop.index }} header -->
+        <div class="header" id="category-{{ extrascategorie.number }}-header" data-toggle="collapse" data-target="#category-{{ extrascategorie.number }}-collapse" aria-expanded="false" aria-controls="category-{{ extrascategorie.number }}-collapse">
+            <div class="row">
+                <div class="col-10 text-left h5">{{ extrascategorie.title }}</div>
+                <div class="col-2 text-right h5"><i class="icon-website-plus"></i></div>
+            </div>
+        </div>
+        <!-- category {{ loop.index }} collapse -->
+        <div class="collapse" id="category-{{ extrascategorie.number }}-collapse" aria-labelledby="category-{{ extrascategorie.number }}-header" data-parent="#extras-with-categories">
+            <div class="body">
+                <div class="accordion" id="category-{{ extrascategorie.number }}-list">    
+                {% for extra in extras %}
+                    <div class="card">
+                        <div class="header" id="header-{{ loop.index }}" data-toggle="collapse" data-target="#category-{{ extrascategorie.number }}-collapse-{{ loop.index }}" aria-expanded="false" aria-controls="category-{{ extrascategorie.number }}-collapse-{{ loop.index }}">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <i class="icon-website-plus"></i>
+                                    {{ extra.title }} 
+                                </div>
+                                <div class="col-12 col-lg-6 text-sm-right">
+                                    price per {{ extra.unit }}: {{ extra.price }} <small>EUR</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="category-{{ extrascategorie.number }}-collapse-{{ loop.index }}" class="collapse" aria-labelledby="header-{{ loop.index }}" data-parent="#category-{{ extrascategorie.number }}-list">
+                            <div class="body row">
+                            {% if extra.hero %}
+                                <div class="col-12 col-lg-6">
+                                    <img class="img-fluid" src="{{ imagepath }}/{{ extra.hero }}.jpg" alt="{{ extra.title }}">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <h6>{{ extra.period }}</h6>
+                                    <p>
+                                        {{ extra.text }}
+                                    </p> 
+                                </div>
+                                {% else %}
+                                <div class="col-12">
+                                    <h6>{{ extra.period }}</h6>
+                                    <p>
+                                        {{ extra.text }}
+                                    </p> 
+                                </div>
+                            {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>  
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>             

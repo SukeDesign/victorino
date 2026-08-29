@@ -1,0 +1,254 @@
+{% extends "layout.html" %}
+{% block pagetitle %} Menu card preview {% endblock %}
+{% block swipper %} 
+    <!-- swipper with images and captions -->
+    <div data-handler="free-block" data-method="swipper">
+      {% for restaurant in restaurants %}
+          {% if loop.first %}
+              <section class="hero" data-handler="free-block" data-method="swipper">
+                  <figure>
+                      <picture>
+                          {%if restaurant.hero %}
+                              <img src="{{ imagepath }}/{{ restaurant.hero }}_1500x630.jpg" alt="{{ restaurant.title }}">
+                          {% else %}
+                              <img src="{{ imagepath }}/1500x630.jpg" alt="{{ restaurant.title }}">
+                          {% endif %}
+                      </picture>
+                      <figcaption>
+                          <p class="h5">
+                              {{ hotelname }} Gastronomy                                            
+                          </p>
+                          <h1>{{ restaurant.title }}</h1>
+                      </figcaption>
+                  </figure>
+              </section>
+          {% endif %}
+      {% endfor %}
+    </div>  
+{% endblock %}
+{% block content %}
+    <!-- menu-card block  -->
+    <section data-handler="free-block" data-method="menu-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="h5">Restaurant Victorino</p>
+                    <h4>Menu card</h4>
+                    <p>A small preview from our menu</p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="menu-card"> 
+                  <div class="card">
+                      <div class="header">
+                          <strong>Allways fresh</strong>
+                          <h5>Appetizers</h5>
+                          <p>Typical portuguese appetizers to go</p>
+                      </div>
+                      <div class="body">
+                          <table class="table">
+                              <tbody>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Gambas (small portion) 
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">In oliv oil, red chili &amp; garlic</small>
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      7,40&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Aperitivos(Tapas) Fish and seafood 
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">Fresh selection from fisch &amp; seafood with parsley, garlic &amp; portugiese oliv oil</small>   
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      11,90&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Aperitivos(Tapas) Meat  
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">Meat croquetes, chamuças, smoked ham </small>  
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      11,90&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Aperitivos(Tapas) mixed plate 
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">Rissóis, croquetes, chamuças, smoked ham and fresh goat cheese</small>   
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      11,90&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Calamares    
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">Fresh selection from fisch &amp; seafood with parsley, garlic &amp; portugiese oliv oil</small>  
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      8,50&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Ameijoa â B. Pato
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">Clam shell with parsley, garlic &amp; portugiese oliv oil sauce &amp; tosted bread</small>      
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      11,90&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Fried Sardines   
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      7,00&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Bread, Ajoli, Olives    
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      3,90&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>                
+                      </div>
+                      <div class="images">
+                            <div class="col-12 col-md-4"><img src="{{ imagepath }}/gastronomy-48_414x414.jpg" alt=""></div>
+                            <div class="col-12 col-md-4"><img src="{{ imagepath }}/gastronomy-14_414x414.jpg" alt=""></div>
+                            <div class="col-12 col-md-4"><img src="{{ imagepath }}/gastronomy-42_414x414.jpg" alt=""></div>
+                      </div>
+                  </div>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="menu-card"> 
+                  <div class="card">
+                      <div class="header">
+                          <strong>Allways local</strong>
+                          <h5>
+                              Fish &amp; Seafood
+                          </h5>
+                          <p>Allways fresh &amp; best quality</p>
+                      </div>
+                      <div class="body">
+                          <table class="table">
+                              <tbody>
+                              <tr class="food-line">
+                                  <td class="food-name">
+                                  Lagosta  
+                                  <br>
+                                  <small class="d-none d-lg-inline-block">In oliv oil, red chili &amp; garlic</small>
+                                  </td>
+                                  <td class="text-primary text-right food-price">
+                                  45,00&nbsp;<small>EUR</small>
+                                  </td>
+                              </tr>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              Dourada 
+                              <br>
+                              <small class="d-none d-lg-inline-block">With potatoes, green salat, tomatoes with parsley, lemon &amp; portugiese oliv oil</small>   
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              16,90&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              Bacalhau dourado  
+                              <br>
+                              <small class="d-none d-lg-inline-block">With black olives, green salat and carot strips</small>  
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              24,60&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div class="images">
+                      </div>
+                  </div>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="menu-card"> 
+                  <div class="card">
+                      <div class="header">
+                          <strong>Allways delicious</strong>
+                          <h5>
+                              Drinks
+                          </h5>
+                          <p>Wine, cocktails &amp; more</p>
+                      </div>
+                      <div class="body">
+                          <table class="table">
+                              <tbody>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              0,3l Orange, Maracuja, Strawberrys &amp; Mango Juice  
+                              <br>
+                              <small class="d-none d-lg-inline-block">Fresh</small>
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              3,20&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              0,25l Water botle
+                              <br>
+                              <small class="d-none d-lg-inline-block">Sparkling or not, allways the best from Luso</small>   
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              1,90&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              0,4l Caipirinha  
+                              <br>
+                              <small class="d-none d-lg-inline-block">Fresh limes, brown sugar, cachaça &amp; crushed ice</small>  
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              7,60&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              0,4l Mojito  
+                              <br>
+                              <small class="d-none d-lg-inline-block">Fresh limes, mint, brown sugar, brown old rum &amp; crushed ice</small>  
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              7,60&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              </tbody>
+                          </table>                                    
+                      </div>
+                      <div class="images">
+                            <div class="col-12 col-md-4"><img src="{{ imagepath }}/gastronomy-32_414x414.jpg" alt=""></div>
+                            <div class="col-12 col-md-4"><img src="{{ imagepath }}/gastronomy-19_414x414.jpg" alt=""></div>
+                      </div>
+                  </div>
+              </div>
+            </div> 
+        </div>
+    </section>
+{% endblock %}

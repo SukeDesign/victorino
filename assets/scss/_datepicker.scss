@@ -1,0 +1,153 @@
+/* add this to ui-date-picker scss */
+.ui-datepicker {
+    display: none;
+    float: left;
+    position: absolute;
+    width: calc(100%-20px);
+    left:10px;
+    right:10px;
+    margin-top: 50px;
+    background: $light;
+    font: 14px/20px $font-family-1;
+    z-index: 99999;
+    transition: transform 1s ease;
+    * {
+      position: relative;
+      z-index: 2;
+    }
+    .ui-datepicker-title {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 28px;
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        margin: 0;
+        padding: 25px 38px 38px;
+    }
+    th {
+        width: 25px;
+        padding: 5px 5px 30px;
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #888;
+    }
+    td {
+        text-align: center;
+        span {
+            display: block;
+            padding: 19px 0;
+            text-decoration: none;
+        }
+        a {
+            display: block;
+            padding: 19px 0;
+            text-decoration: none;
+        }
+    }
+    .ui-datepicker-prev {
+        position: absolute;
+        top: 30px !important;
+        left: 40px;
+        z-index: 3;
+    }
+    .ui-datepicker-prev .ui-icon:before {
+        content: "\e90c";
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        font-size: 25px;
+        font-weight: normal;
+        color: $light;
+        text-indent: 0;
+        font-family: "website";
+        position: absolute;
+        top: -20px;
+        left: -40px;
+    }
+    .ui-datepicker-next {
+        position: absolute;
+        top: 30px !important;
+        right: 48px;
+        z-index: 3;
+    }
+    .ui-datepicker-next .ui-icon:before {
+        content: "\e90b";
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        font-size: 25px;
+        font-weight: normal;
+        color: $light;
+        text-indent:0;
+        font-family: 'website';
+        position: absolute;
+        top: -20px;
+        left: 0;
+    }
+}
+.ui-datepicker-group {
+  width: 50%;
+  float: left;
+}
+.ui-datepicker-header {
+  position: relative;
+}
+.ui-datepicker-title {
+  font: 22px/80px $font-family-1 !important;
+  color: $white;
+  background: $dark;
+}
+.ui-datepicker-title .ui-datepicker-year {
+  font-weight: 200;
+  letter-spacing: .5px;
+}
+.ui-datepicker-group-first .ui-datepicker-header {
+  border-right: 1px solid $dark;
+}
+.ui-datepicker-group-first table {
+  border-right: 1px solid $light;
+}
+@media (min-width: 1024px) {
+    .ui-datepicker {
+        display: none;
+        position: fixed !important;
+        top: 50% !important;
+        left:calc( 50% + 41px ) !important;
+        right:auto;
+        width: 50rem !important;
+        transform:translateX(-50%);
+        margin-top: -300px !important;
+        box-shadow: 0 0 0 1px rgba($black,.05), 0 0 15px rgba($black,.07), 0 0 0 50px rgba(200,200,200,.5);
+        /* tables */
+        .ui-datepicker-calendar {
+            .ui-state-default, .ui-widget-content .ui-state-default {
+                font-weight: 300;
+                font-size: 18px;
+                background:$white;
+                color:$text-color;
+                letter-spacing: .5px;
+                text-align: center;
+            }  
+            .ui-state-disabled, .ui-widget-content .ui-state-disabled {
+                opacity: 0.25;
+                cursor: default;
+            }          
+            .ui-state-hover, .ui-widget-content .ui-state-hover, 
+            .ui-state-focus, .ui-widget-content .ui-state-focus, 
+            .ui-state-active, .ui-widget-content .ui-state-active,
+            .ui-datepicker-current-day, .ui-datepicker-today,
+            .ui-state-highlight {
+                background:$booking-form-btn-bg;
+                color:$white; 
+                font-weight: 500;
+                * { 
+                    color:inherit; 
+                }
+            }
+        }
+    }
+}

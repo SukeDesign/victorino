@@ -1,0 +1,135 @@
+{% extends "layout.html" %}
+{% block pagetitle %} Offers {% endblock %}
+{% block swipper %} 
+    <!-- swipper with images and captions -->
+    <div data-handler="free-block" data-method="swipper">
+        <div id="offers-swiper-carousel-large" class="carousel carousel-fade slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+            {% for offer in offers %}
+                <li data-target="#offers-swiper-carousel-large" data-slide-to="{{ loop.index-1 }}"{% if loop.index == 1 %} class="active"{% endif %}>0{{ loop.index }}</li>
+            {% endfor %}
+            </ol>
+            <div class="carousel-inner">
+            {% for offer in offers %}
+                <div class="carousel-item mb-0{% if loop.index == 1 %} active{% endif %}">
+                    <figure>
+                        <img src="{{ imagepath }}/{{ offer.hero }}_1500x630.jpg" alt="{{ offer.title }}">
+                        <figcaption>
+                            <h5>
+                                {{ hotelname }} Special Offers                                                                                      
+                            </h5>
+                            <h2>{{ offer.title }}</h2>
+                        </figcaption>
+                    </figure>
+                </div> 
+            {% endfor %}
+            </div> 
+        </div> 
+        {% include "bookingbar.html" %}
+    </div>  
+{% endblock %}
+{% block content %}
+    <!-- offers teaser horizontal block -->
+    <section data-handler="offers" data-method="teaser-horizontal">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Special Offers</h5>
+                    <h2>Invite Friends & Family</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {% for offer in offers %}
+                <article>  
+                    <div class="image">
+                        <p class="price">
+                           <small>from</small><span>{{ currency }}{{ offer.price }}</span><small>P.p</small>
+                        </p> 
+                        <img src="{{ imagepath }}/{{ offer.image }}_475x260.jpg" alt="{{ offer.title }}">
+                    </div>
+                    <div class="body">
+                        <h5>{{ offer.title }}</h5>
+                        <p>{{ offer.text }}</p>
+                        <ul>
+                            {% for facility in offer.facilities %}
+                                <li data-toggle="tooltip">
+                                    <i class="icon-service-rooms-{{ facility }}"></i>
+                                    <span>{{ facility }}</span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <a href="{{ offer.link }}" class="btn-details">
+                            <span data-hover="offer">Visit</span>
+                        </a> 
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- offers teaser mosaic block | only if more then 3 items  -->
+    <section data-handler="offers" data-method="teaser-mosaic">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Special Offers</h5>
+                    <h2>Invite Friends & Family</h2>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            {% for offer in offers %}
+                <figure class="grid-item item-{{ loop.index }}"> 
+                    <img src="{{ imagepath }}/{{ offer.image }}_1500x630.jpg" alt="{{ offer.title }}">
+                    <figcaption>
+                        {% if loop.index == 3 %}
+                        <h5 class="title">{{ offer.title }}</h5>
+                        {% else %}
+                        <h5>{{ offer.title }}</h5>
+                        {% endif %}
+                        <a href="{{ offer.link }}" class="btn-details">
+                            <span data-hover="offer">Visit</span>
+                        </a> 
+                    </figcaption>
+                </figure>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- offers teaser block -->
+    <section data-handler="offers" data-method="teaser">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Special Offers</h5>
+                    <h2>Invite Friends & Family</h2>
+                </div>
+            </div>
+            <div class="row">
+                {% for offer in offers %}
+                <article>
+                    <div class="card"> 
+                        <div class="image"> 
+                            <a href="{{ offer.link }}">  
+                                <picture>
+                                    <img src="{{ imagepath }}/{{ offer.hero }}_414x414.jpg" alt="{{ offer.title }}" class="w-100">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="body">
+                            <p class="price">
+                                <small>from</small>
+                                <span>{{ currency }}{{ offer.price }}</span>
+                            </p> 
+                            <h5><a href="{{ offer.link }}">{{ offer.title }}</a></h5>                   
+                            <p>max. {{ offer.nights }} nights</p>
+                            <a href="{{ offer.link }}" class="btn-details">
+                                <span data-hover="about this.">Read more...</span>
+                            </a>
+                        </div>
+                    </div>
+                </article> 
+                {% endfor %}
+            </div>            
+        </div>
+    </section>
+{% endblock %}

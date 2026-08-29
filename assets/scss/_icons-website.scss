@@ -1,0 +1,301 @@
+@font-face {
+  font-family: 'website';
+  src:  url('https://themes.busyrooms.co/themes/victorino/assets/fonts/website.eot?wbsm4w');
+  src:  url('https://themes.busyrooms.co/themes/victorino/assets/fonts/website.eot?wbsm4w#iefix') format('embedded-opentype'),
+    url('https://themes.busyrooms.co/themes/victorino/assets/fonts/website.ttf?wbsm4w') format('truetype'),
+    url('https://themes.busyrooms.co/themes/victorino/assets/fonts/website.woff?wbsm4w') format('woff'),
+    url('https://themes.busyrooms.co/themes/victorino/assets/fonts/website.svg?wbsm4w#website') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-website-"], [class*=" icon-website-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'website' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-website-download:before {
+  content: "\e908";
+}
+.icon-website-size:before {
+  content: "\e913";
+}
+.icon-website-seat:before {
+  content: "\e907";
+}
+.icon-website-child-friendly:before {
+  content: "\e909";
+}
+.icon-website-child-care:before {
+  content: "\e90a";
+}
+.icon-website-arrow-right:before {
+  content: "\e90b";
+}
+.icon-website-arrow-left:before {
+  content: "\e90c";
+}
+.icon-website-arrow-up:before {
+  content: "\e90d";
+}
+.icon-website-arrow-down:before {
+  content: "\e90e";
+}
+.icon-website-chevron-up:before {
+  content: "\e90f";
+}
+.icon-website-chevron-right:before {
+  content: "\e910";
+}
+.icon-website-chevron-left:before {
+  content: "\e911";
+}
+.icon-website-chevron-down:before {
+  content: "\e912";
+}
+
+.icon-website-sphere:before {
+  content: "\e900";
+}
+.icon-website-globe:before {
+  content: "\e901";
+}
+.icon-website-twitter:before {
+  content: "\e902";
+}
+.icon-website-facebook:before {
+  content: "\e903";
+}
+.icon-website-googleplus:before {
+  content: "\e904";
+}
+.icon-website-video:before {
+  content: "\e905";
+}
+.icon-website-menu:before {
+  content: "\e906";
+}
+.icon-website-poi:before {
+  content: "\24";
+}
+.icon-website-hotel:before {
+  content: "\26";
+}
+.icon-website-outdoors:before {
+  content: "\28";
+}
+.icon-website-plus:before {
+  content: "\2b";
+}
+.icon-website-lift:before {
+  content: "\2c";
+}
+.icon-website-wheelchair:before {
+  content: "\2d";
+}
+.icon-website-roomservice:before {
+  content: "\2e";
+}
+.icon-website-chat:before {
+  content: "\30";
+}
+.icon-website-edit:before {
+  content: "\31";
+}
+.icon-website-like:before {
+  content: "\32";
+}
+.icon-website-dislike:before {
+  content: "\33";
+}
+.icon-website-dog:before {
+  content: "\35";
+}
+.icon-website-building:before {
+  content: "\36";
+}
+.icon-website-trees:before {
+  content: "\37";
+}
+.icon-website-train:before {
+  content: "\38";
+}
+.icon-website-bus:before {
+  content: "\39";
+}
+.icon-website-taxi:before {
+  content: "\3a";
+}
+.icon-website-parking:before {
+  content: "\3b";
+}
+.icon-website-images:before {
+  content: "\40";
+}
+.icon-website-luggage:before {
+  content: "\41";
+}
+.icon-website-photo-camera:before {
+  content: "\42";
+}
+.icon-website-credit-cards:before {
+  content: "\43";
+}
+.icon-website-currency:before {
+  content: "\44";
+}
+.icon-website-map:before {
+  content: "\45";
+}
+.icon-website-golf:before {
+  content: "\47";
+}
+.icon-website-bike:before {
+  content: "\48";
+}
+.icon-website-location:before {
+  content: "\49";
+}
+.icon-website-pillars:before {
+  content: "\4c";
+}
+.icon-website-eye:before {
+  content: "\4e";
+}
+.icon-website-non-smoking:before {
+  content: "\4f";
+}
+.icon-website-sign:before {
+  content: "\50";
+}
+.icon-website-store:before {
+  content: "\51";
+}
+.icon-website-bag:before {
+  content: "\52";
+}
+.icon-website-label:before {
+  content: "\53";
+}
+.icon-website-time:before {
+  content: "\54";
+}
+.icon-website-calendar:before {
+  content: "\55";
+}
+.icon-website-info:before {
+  content: "\56";
+}
+.icon-website-chat-buble:before {
+  content: "\58";
+}
+.icon-website-support:before {
+  content: "\59";
+}
+.icon-website-gastronomy:before {
+  content: "\5a";
+}
+.icon-website-coffee:before {
+  content: "\5b";
+}
+.icon-website-bar:before {
+  content: "\5c";
+}
+.icon-website-mobile:before {
+  content: "\5e";
+}
+.icon-website-home:before {
+  content: "\60";
+}
+.icon-website-settings:before {
+  content: "\61";
+}
+.icon-website-trash-bin:before {
+  content: "\63";
+}
+.icon-website-write:before {
+  content: "\64";
+}
+.icon-website-paperclip:before {
+  content: "\65";
+}
+.icon-website-user:before {
+  content: "\66";
+}
+.icon-website-lock:before {
+  content: "\67";
+}
+.icon-website-link:before {
+  content: "\68";
+}
+.icon-website-headset:before {
+  content: "\69";
+}
+.icon-website-check:before {
+  content: "\6c";
+}
+.icon-website-close:before {
+  content: "\6d";
+}
+.icon-website-zoom:before {
+  content: "\6e";
+}
+.icon-website-zoom-in:before {
+  content: "\6f";
+}
+.icon-website-zoom-out:before {
+  content: "\70";
+}
+.icon-website-star:before {
+  content: "\71";
+}
+.icon-website-heart:before {
+  content: "\72";
+}
+.icon-website-clock:before {
+  content: "\73";
+}
+.icon-website-email:before {
+  content: "\74";
+}
+.icon-website-wifi:before {
+  content: "\76";
+}
+.icon-website-chart:before {
+  content: "\77";
+}
+.icon-website-share:before {
+  content: "\78";
+}
+.icon-website-24h-line:before {
+  content: "\79";
+}
+.icon-website-phone:before {
+  content: "\7b";
+}
+.icon-website-file:before {
+  content: "\7c";
+}
+.icon-website-book:before {
+  content: "\7d";
+}
+.icon-website-visit-card:before {
+  content: "\7e";
+}
+.icon-website-fax:before {
+  content: "\e800";
+}
+.icon-website-microphone:before {
+  content: "\e803";
+}

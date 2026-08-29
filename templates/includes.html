@@ -1,0 +1,39 @@
+<!-- included extras without price -->
+<div class="accordion" id="includes">
+    {% for extra in extras %}
+    <div class="card">
+        <div class="header" id="includes-header-{{ loop.index }}" data-toggle="collapse" data-target="#includes-collapse-{{ loop.index }}" aria-expanded="false" aria-controls="includes-collapse-{{ loop.index }}">
+            <div class="row">
+                <div class="col-12">
+                    <i class="icon-website-plus mr-1"></i>
+                    {{ extra.title }}  
+                </div>
+            </div>
+        </div>
+        <div id="includes-collapse-{{ loop.index }}" class="collapse" aria-labelledby="includes-header-{{ loop.index }}" data-parent="#includes">
+            <div class="body">
+                <div class="row">
+                    {% if extra.hero %}
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid" src="{{ imagepath }}/{{ extra.hero }}.jpg" alt="{{ extra.title }}">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h6>{{ extra.period }}</h6>
+                        <p>
+                            {{ extra.text }}
+                        </p> 
+                    </div>
+                    {% else %}
+                    <div class="col-12">
+                        <h6>{{ extra.period }}</h6>
+                        <p>
+                            {{ extra.text }}
+                        </p> 
+                    </div>
+                    {% endif %}
+                </div>                               
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>               

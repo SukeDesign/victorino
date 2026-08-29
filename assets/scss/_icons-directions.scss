@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'directions';
+  src:  url('https://media.busyrooms.co/fonts/icomoon/directions.eot?njtrg4');
+  src:  url('https://media.busyrooms.co/fonts/icomoon/directions.eot?njtrg4#iefix') format('embedded-opentype'),
+    url('https://media.busyrooms.co/fonts/icomoon/directions.ttf?njtrg4') format('truetype'),
+    url('https://media.busyrooms.co/fonts/icomoon/directions.woff?njtrg4') format('woff'),
+    url('https://media.busyrooms.co/fonts/icomoon/directions.svg?njtrg4#directions') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-directions-"], [class*=" icon-directions-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'directions' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-directions-fairground:before {
+  content: "\e84f";
+}
+.icon-directions-airport:before {
+  content: "\e539";
+}
+.icon-directions-beach:before {
+  content: "\eb3e";
+}
+.icon-directions-bike:before {
+  content: "\e52f";
+}
+.icon-directions-harbour:before {
+  content: "\e532";
+}
+.icon-directions-busstop:before {
+  content: "\e530";
+}
+.icon-directions-motorway:before {
+  content: "\e531";
+}
+.icon-directions-mainstation:before {
+  content: "\e534";
+}
+.icon-directions-run:before {
+  content: "\e566";
+}
+.icon-directions-transit:before {
+  content: "\e535";
+}
+.icon-directions-walk:before {
+  content: "\e536";
+}
+.icon-directions-gasstation:before {
+  content: "\e546";
+}
+.icon-directions-taxi:before {
+  content: "\e559";
+}
+.icon-directions-meetingpoint:before {
+  content: "\e8b4";
+}
+.icon-directions-motorcycle:before {
+  content: "\e91b";
+}
+.icon-directions-citycenter:before {
+  content: "\e837";
+}
+.icon-directions-train:before {
+  content: "\e570";
+}
+.icon-directions-metro:before {
+  content: "\e571";
+}

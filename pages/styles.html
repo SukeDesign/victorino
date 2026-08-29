@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+{% block pagetitle %} Styleguide {% endblock %}
+
+{% block content %}
+    <!-- text block default - center class -->
+    <article data-handler="free-block" data-method="text">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Styleguide to {{ hotelname }}</h5>
+                    <h1>H1 - h4 font type 'Roboto'</h1>
+                    <h2 class="title">Headline class .title font type 'Brush'</h2>
+                    <p>Default text in font type 'Poppins'</p>
+                    <p>&nbsp;</p>
+                    <p>And here our five default colors</p>
+                    <p>
+                        <a href="#" class="btn-primary">primary</a>
+                        <a href="#" class="btn-secondary">secondary</a>
+                        <a href="#" class="btn-third">third</a>
+                        <a href="#" class="btn-fourth">fourth</a>
+                        <a href="#" class="btn-fifth">fifth</a>
+                    </p>
+                </div>
+            </div>
+        </div> 
+    </article>
+    <!-- Only used in website -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h5>Icons Website</h5>
+                <p>Use .icon-website-[name] and .display-4 for larger icon size</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="row">
+        {% for w in iconswebsite %}
+            <div class="col-2 mb-3 text-center">
+                <i class="icon-website-{{ w.name }} display-4"></i>
+                <br>
+                <span>
+                    <span class="badge badge-primary">
+                        {{ loop.index }}
+                    </span>
+                    {{ w.name }}
+                </span>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+    <!-- Services + hotel and room facilities -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Service Icons = facilities + hotel + rooms</h2>
+                <h5>Icons Facilities</h5>
+                <p>Use .icon-service-facilities-[name]</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="row">
+            {% for f in iconsfacilities %}
+                <div class="col-2 mb-3 text-center">
+                    <i class="icon-service-facilities-{{ f.name }} display-4"></i>
+                    <br>
+                    <span>
+                        <span class="badge badge-primary">
+                            {{ loop.index }}
+                        </span>
+                        {{ f.name }}
+                    </span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h5>Icons Hotel</h5>
+                <p>Use .icon-service-hotel-[name] and .display-4 for larger icon size</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="row">
+        {% for h in iconshotel %}
+            <div class="col-2 mb-3 text-center">
+                <i class="icon-service-hotel-{{ h.name }} display-4"></i>
+                <br>
+                <span>
+                    <span class="badge badge-primary">
+                        {{ loop.index }}
+                    </span>
+                    {{ h.name }}
+                </span>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h5>Icons Rooms</h5>
+                <p>Use .icon-service-rooms-[name] and .display-4 for larger icon size</p>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="row">
+        {% for r in iconsrooms %}
+            <div class="col-2 mb-3 text-center">
+                <i class="icon-service-rooms-{{ r.name }} display-4"></i>
+                <br>
+                <span>
+                    <span class="badge badge-primary">
+                        {{ loop.index }}
+                    </span>
+                    {{ r.name }}
+                </span>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}

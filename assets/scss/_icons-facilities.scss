@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'facilities';
+  src: url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.eot?55361665');
+  src: url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.eot?55361665#iefix') format('embedded-opentype'),
+       url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.woff?55361665') format('woff'),
+       url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.ttf?55361665') format('truetype'),
+       url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.svg?55361665#icon_set_1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'facilities';
+    src: url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.svg?55361665#facilities') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-facilities-"]:before, [class*="icon-facilities-"]:before {
+  font-family: "facilities";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  
+   /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-facilities-building:before { content: '\21'; } /* '!' */
+.icon-facilities-church:before { content: '\22'; } /* '&quot;' */
+.icon-facilities-amusement-park:before { content: '\23'; } /* '#' */
+.icon-facilities-history:before { content: '\24'; } /* '$' */
+.icon-facilities-train:before { content: '\25'; } /* '%' */
+.icon-facilities-hotel:before { content: '\26'; } /* '&amp;' */
+.icon-facilities-satelite:before { content: '\27'; } /* ''' */
+.icon-facilities-outdoors:before { content: '\28'; } /* '(' */
+.icon-facilities-to-go-drink:before { content: '\29'; } /* ')' */
+.icon-facilities-lift:before { content: '\2c'; } /* ',' */
+.icon-facilities-wheelchair:before { content: '\2d'; } /* '-' */
+.icon-facilities-room-service:before { content: '\2e'; } /* '.' */
+.icon-facilities-ice-bucket:before { content: '\2f'; } /* '/' */
+.icon-facilities-chat:before { content: '\30'; } /* '0' */
+.icon-facilities-paper-pen:before { content: '\31'; } /* '1' */
+.icon-facilities-martiny-glass:before { content: '\34'; } /* '4' */
+.icon-facilities-taxi:before { content: '\3a'; } /* '5' */
+.icon-facilities-dog:before { content: '\35'; } /* '5' */
+.icon-facilities-skyscrapper:before { content: '\36'; } /* '6' */
+.icon-facilities-trees:before { content: '\37'; } /* '7' */
+.icon-facilities-subway:before { content: '\38'; } /* '8' */
+.icon-facilities-bus:before { content: '\39'; } /* '9' */
+.icon-facilities-parking:before { content: '\3b'; } /* ':' */
+.icon-facilities-cable-car:before { content: '\3c'; } /* '&lt;' */
+.icon-facilities-backpacker:before { content: '\3d'; } /* '=' */
+.icon-facilities-walking-tours:before { content: '\3e'; } /* '&gt;' */
+.icon-facilities-video-camera:before { content: '\3f'; } /* '?' */
+.icon-facilities-photos:before { content: '\40'; } /* '@' */
+.icon-facilities-suitcase:before { content: '\41'; } /* 'A' */
+.icon-facilities-photo-camera:before { content: '\42'; } /* 'B' */
+.icon-facilities-credit-cards:before { content: '\43'; } /* 'C' */
+.icon-facilities-currency:before { content: '\44'; } /* 'D' */
+.icon-facilities-map:before { content: '\45'; } /* 'E' */
+.icon-facilities-compass:before { content: '\46'; } /* 'F' */
+.icon-facilities-golf:before { content: '\47'; } /* 'G' */
+.icon-facilities-bike-rental:before { content: '\48'; } /* 'H' */
+.icon-facilities-location:before { content: '\49'; } /* 'I' */
+.icon-facilities-search:before { content: '\4a'; } /* 'J' */
+.icon-facilities-small-church:before { content: '\4b'; } /* 'K' */
+.icon-facilities-points-of-interest:before { content: '\4c'; } /* 'L' */
+.icon-facilities-no-photos:before { content: '\4d'; } /* 'M' */
+.icon-facilities-eye:before { content: '\4e'; } /* 'N' */
+.icon-facilities-non-smoking:before { content: '\4f'; } /* 'O' */
+.icon-facilities-sign:before { content: '\50'; } /* 'P' */
+.icon-facilities-store:before { content: '\51'; } /* 'Q' */
+.icon-facilities-bag:before { content: '\52'; } /* 'R' */
+.icon-facilities-label:before { content: '\53'; } /* 'S' */
+.icon-facilities-clock:before { content: '\54'; } /* 'T' */
+.icon-facilities-calendar:before { content: '\55'; } /* 'U' */
+.icon-facilities-information:before { content: '\56'; } /* 'V' */
+.icon-facilities-call:before { content: '\57'; } /* 'W' */
+.icon-facilities-chat-buble:before { content: '\58'; } /* 'X' */
+.icon-facilities-support:before { content: '\59'; } /* 'Y' */
+.icon-facilities-gastronomy:before { content: '\5a'; } /* 'Z' */
+.icon-facilities-coffee:before { content: '\5b'; } /* '[' */
+.icon-facilities-cocktail-glas:before { content: '\5c'; } /* '\' */
+.icon-facilities-flag:before { content: '\5d'; } /* ']' */
+.icon-facilities-mobile:before { content: '\5e'; } /* '^' */
+.icon-facilities-mobile-pointer:before { content: '\5f'; } /* '_' */
+.icon-facilities-home:before { content: '\60'; } /* '`' */
+.icon-facilities-user:before { content: '\66'; } /* 'f' */
+.icon-facilities-lock:before { content: '\67'; } /* 'g' */
+.icon-facilities-headset:before { content: '\69'; } /* 'i' */
+.icon-facilities-star:before { content: '\71'; } /* 'q' */
+.icon-facilities-heart:before { content: '\72'; } /* 'r' */
+.icon-facilities-time:before { content: '\73'; } /* 's' */
+.icon-facilities-email:before { content: '\74'; } /* 't' */
+.icon-facilities-chat-bubles:before { content: '\75'; } /* 'u' */
+.icon-facilities-wifi:before { content: '\76'; } /* 'v' */
+.icon-facilities-chart:before { content: '\77'; } /* 'w' */
+.icon-facilities-share:before { content: '\78'; } /* 'x' */
+.icon-facilities-24-hours-line:before { content: '\79'; } /* 'y' */
+.icon-facilities-calling:before { content: '\7a'; } /* 'z' */
+.icon-facilities-phone:before { content: '\7b'; } /* '{' */
+.icon-facilities-file:before { content: '\7c'; } /* '|' */
+.icon-facilities-book:before { content: '\7d'; } /* '}' */
+.icon-facilities-visitcard:before { content: '\7e'; } /* '~' */
+.icon-facilities-fax:before { content: '\e800'; } /* '' */
+.icon-facilities-silence:before { content: '\e801'; } /* '' */
+.icon-facilities-sound:before { content: '\e802'; } /* '' */
+.icon-facilities-microphone:before { content: '\e803'; } /* '' */
+.icon-facilities-micro-out:before { content: '\e804'; } /* '' */
+.icon-facilities-shouting:before { content: '\e805'; } /* '' */

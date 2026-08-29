@@ -1,0 +1,750 @@
+{% extends "layout.html" %}
+{% block pagetitle %}Free blocks{% endblock %}
+{% block swipper %} 
+    {% include "swipper.html" %} 
+{% endblock %}
+{% block content %}
+    <!-- text block default -->
+    <article data-handler="free-block" data-method="text">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Text with no image</h5>
+                    <h2>Text block</h2>
+                    <p>{{ intro }}</p>
+                </div>
+            </div> 
+        </div>
+    </article>
+    <!-- text block centered -->
+    <article class="text-center" data-handler="free-block" data-method="text">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Text with no image</h5>
+                    <h2>Text block</h2>
+                    <p>{{ intro }}</p>
+                </div>
+            </div> 
+        </div>
+    </article>
+    <!-- text block with image left -->
+    <article data-handler="free-block" data-method="text">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">  
+                    <!-- Don't use focuspoint here -->
+                    <img class="img-fluid" src="{{ imagepath }}/hotel-3_475x260.jpg" alt="left image">                  
+                </div>
+                <div class="col-12 col-sm-6">
+                    <h5>Text with image left</h5>
+                    <h2>Text block</h2>
+                    <p>
+                        {{ intro }} 
+                    </p>
+                </div>
+            </div> 
+        </div> 
+    </article>
+    <!-- text block with image right -->
+    <article data-handler="free-block" data-method="text">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 order-sm-2 text-right">  
+                    <!-- Don't use focuspoint here -->
+                    <img class="img-fluid" src="{{ imagepath }}/hotel-4_414x414.jpg" alt="right image">                  
+                </div>
+                <div class="col-12 col-sm-6">
+                    <h5>Text with image right</h5>
+                    <h2>Text block</h2>
+                    <p>
+                        {{ intro }}
+                    </p>
+                </div>
+            </div> 
+        </div> 
+    </article>
+    <!-- Promotion block -->
+    <section class="promotion-block" data-handler="free-block" data-method="promotion">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Some optional subtitle</h5>
+                    <h2>Promotion block</h2>
+                    <p>Some text for the Promotion block. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <a href="offers.html" class="btn-details">
+                        <span data-hover="our promotions">Read more about... </span>
+                    </a> 
+                </div>
+            </div>          
+        </div>
+    </section>
+    <!-- Quote block -->
+    <blockquote class="blockquote-block" cite="Lisa Watson" data-handler="free-block" data-method="blockquote">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="blockquote-image text-center">
+                        <img class="rounded-circle mx-auto" src="{{ imagepath }}/team-2_414x414.jpg" alt="Lisa Watson">
+                    </div>
+                    <p class="blockquote-body">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium sollicitudin.</p>
+                    <footer class="blockquote-footer">
+                        <strong>Lisa Watson (Melbourne)</strong>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </blockquote>
+  
+    <!-- video block -->
+    <section data-handler="free-block" data-method="hotel-video">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="video-image"> 
+                        <img src="{{ imagepath }}/video.jpg" alt="Hotel video"> 
+                        <a href="#">
+                            <i class="icon-website-zoom-in"></i>
+                        </a> 
+                    </div>
+                    <h2>Welcome in {{ hotelname }}</h2>
+                    <p>Say something about Hotel video</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tabs Block -->
+    <section class="bg-block" data-handler="free-block" data-method="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Tabs subtitel</h5>
+                    <h2>Tabs Block</h2>
+                    <p>Tabs block text if we have one and want to explain what are the tabs about.</p>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-fill" id="tabs" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link btn-block active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">first</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link btn-block" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">second</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link btn-block" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false">third</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link btn-block" id="fourth-tab" data-toggle="tab" href="#fourth" role="tab" aria-controls="fourth" aria-selected="false">fourth</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link btn-block" id="fifth-tab" data-toggle="tab" href="#fifth" role="tab" aria-controls="fifth" aria-selected="false">fifth</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                            <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="second" role="tabpanel" aria-labelledby="second-tab">
+                            <p>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? 
+                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="third" role="tabpanel" aria-labelledby="third-tab">
+                            <p>
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditlis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
+                            <p>
+                            Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                            </p>
+                        </div>
+                        <div class="tab-pane" id="fifth" role="tabpanel" aria-labelledby="fifth-tab">
+                            <p>
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /tabs -->
+                </div>
+            </div> 
+        </div>       
+    </section>
+    <!-- testimonials | will slide if more then 1 -->
+    <section class="highlight-block" data-handler="free-block" data-method="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Testimonials</h5>
+                    <h2>What our guests say</h2>
+                    <a href="free-blocks.html" class="btn-details">
+                        <span data-hover="about us">Read more</span>
+                    </a> 
+                </div>
+                <div class="col-md-6">
+                    <div class="slick-carousel slick-one">
+                        {% for testimonial in testimonials %}
+                        <div class="slick-item">
+                            <blockquote class="slick-testimonal">
+                                {{ testimonial.text }}
+                                <span class="slick-name">{{ testimonial.author }}</span> 
+                            </blockquote>
+                        </div>
+                        {% endfor %}                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- awards block if more then 6 please add slick carousel -->
+    <section data-handler="free-block" data-method="awards">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <h5>Free-block</h5>
+                    <h2>Awards</h2>
+                    <p>Some text to our awards</p>
+                </div>
+            </div>
+            <div class="row">            
+                <div class="col-12 col-lg mb-1 mb-lg-0 text-center">
+                    <a href="https://www.tripadvisor.com" target="_blank">
+                        <img class="img-fluid" src="{{ imagepath }}/brand-1.png" alt="Brand-1">
+                    </a>
+                </div>
+                <div class="col-12 col-lg mb-1 mb-lg-0 text-center">
+                    <a href="#" target="_blank">
+                        <img class="img-fluid" src="{{ imagepath }}/brand-2.png" alt="Brand-2">
+                    </a>
+                </div>
+                <div class="col-12 col-lg mb-1 mb-lg-0 text-center">
+                    <a href="#" target="_blank">
+                        <img class="img-fluid" src="{{ imagepath }}/brand-3.png" alt="Brand-3">
+                    </a>
+                </div>
+                <div class="col-12 col-lg mb-1 mb-lg-0 text-center">
+                    <a href="#" target="_blank">
+                        <img class="img-fluid" src="{{ imagepath }}/brand-4.png" alt="Brand-4">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- free-block teaser TODO: Optional with a round badge field -->
+    <section data-handler="free-block" data-method="teaser">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>{{ hotelname }}</h5>
+                    <h2>Free-block teaser overview</h2>
+                </div>
+            </div>
+            <div class="row">
+                {% for teaser in teasers %}
+                <article>
+                    <div class="card"> 
+                        <div class="image"> 
+                            <a href="{{ teaser.link }}">  
+                                <picture>
+                                    <img src="{{ imagepath }}/{{ teaser.hero }}_414x414.jpg" alt="{{ teaser.title }}" class="w-100">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="body">
+                            <h5><a href="{{ teaser.link }}">{{ teaser.title }}</a></h5>                   
+                            <p>{{ teaser.text }}</p>
+                            <a href="{{ teaser.link }}" class="btn-details">
+                                <span data-hover="about this.">Read more...</span>
+                            </a>
+                        </div>
+                    </div>
+                </article> 
+                {% endfor %}
+            </div>            
+        </div>
+    </section>
+    <!-- free-block teaser horizontal -->
+    <section data-handler="free-block" data-method="teaser-horizontal">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>{{ hotelname }}</h5>
+                    <h2>Free-block teaser overview</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {% for teaser in teasers %}
+                <article>  
+                    <div class="image">
+                        <img src="{{ imagepath }}/{{ teaser.image }}_475x260.jpg" alt="{{ teaser.title }}">
+                    </div>
+                    <div class="body">
+                        <h5>{{ teaser.title }}</h5>
+                        <p>{{ teaser.text }}</p>
+                        <a class="btn-details" href="{{ teaser.link }}">
+                            <span data-hover="this">Visit</span>
+                        </a> 
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- free-block teaser mosaic -->
+    <section data-handler="free-block" data-method="teaser-mosaic">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>{{ hotelname }}</h5>
+                    <h2>Free-block teaser overview</h2>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            {% for teaser in teasers %}
+                <figure class="grid-item item-{{ loop.index }}">  
+                    <img src="{{ imagepath }}/{{ teaser.image }}_1500x630.jpg" alt="{{ teaser.title }}">
+                    <figcaption>
+                        {% if loop.index == 3 %}
+                        <h5 class="title">{{ teaser.title }}</h5>
+                        {% else %}
+                        <h5>{{ teaser.title }}</h5>
+                        {% endif %}
+                        <a href="{{ teaser.link }}" class="btn-details">
+                            <span data-hover="about this">Read more</span>
+                        </a> 
+                    </figcaption>
+                </figure>
+            {% endfor %}                        
+        </div>
+    </section> 
+    <!-- free-block teaser masonry - completly random -->
+    <section data-handler="free-block" data-method="teaser-masonry">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>{{ hotelname }}</h5>
+                    <h2>Free-block teaser overview in masonry style</h2>
+                    <p>This will allways be random</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="masonry-with-columns">
+                {% for teaser in teasers %}
+                    <figure class="masonry-item item-{{ loop.index }}">  
+                        <img src="{{ imagepath }}/{{ teaser.image }}_1500x630.jpg" alt="{{ teaser.title }}">
+                        <figcaption>
+                            {% if loop.index == 3 %}
+                            <h5 class="title">{{ teaser.title }}</h5>
+                            {% else %}
+                            <h5>{{ teaser.title }}</h5>
+                            {% endif %}
+                            <a href="{{ teaser.link }}" class="btn-details">
+                                <span data-hover="about this">Read more</span>
+                            </a> 
+                        </figcaption>
+                    </figure>
+                {% endfor %}                        
+            </div>
+        </div>
+    </section> 
+    <!-- download block  -->
+    <section data-handler="free-block" data-method="downloads">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Free-block</h5>
+                    <h3 class="text-primary">Downloads</h3>
+                    <p>Choose the colour you like for your download buttons</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a  href="https://media.busyrooms.co/images/icomoon.zip" class="btn-details btn-primary">
+                        <span data-hover="...Ipsum as PDF">
+                            <i class="icon-website-download"></i>
+                             Download
+                        </span>
+                    </a>
+                    <a  href="https://media.busyrooms.co/images/icomoon.zip" class="btn-details btn-secondary">
+                        <span data-hover="...Ipsum as ZIP">
+                            <i class="icon-website-download"></i> Download
+                        </span>
+                    </a>
+                    <a  href="https://media.busyrooms.co/images/icomoon.zip" class="btn-details btn-third">
+                        <span data-hover="...Ipsum as ZIP">
+                            <i class="icon-website-download"></i> Download
+                        </span>
+                    </a>
+                    <a  href="https://media.busyrooms.co/images/icomoon.zip" class="btn-details btn-fourth">
+                        <span data-hover="...Ipsum as ZIP">
+                            <i class="icon-website-download"></i> Download
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services (with icons) as a slider -->
+    <section data-handler="services" data-method="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Free-block</h5> 
+                    <h2>Services - Slider view</h2>
+                    <p>Some text for the services slider</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">                    
+                    <div class="slick-carousel four-items card-deck">
+                        {% for service in services %}
+                            {% if service.title %}
+                            <div class="card">
+                                <div class="top">
+                                    <div class="icon">
+                                        <i class="icon-service-facilities-{{ service.icon }}"></i>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <h5>{{ service.title }}</h5>
+                                </div>
+                                <div class="footer">
+                                    <p>Some text to explain your service</p>
+                                </div>
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- services accordion view -->
+    <section data-handler="services" data-method="accordion">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Free-block</h5>
+                    <h2>Services accordion view</h2>
+                    <p>If your services have a lot of text....</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"> 
+                    <div class="accordion" id="services">
+                        {% for service in services %}
+                            {% if service.title %}
+                                <div class="card">
+                                    <div class="header" role="button" id="services-header-{{ loop.index }}" data-toggle="collapse" data-target="#services-{{ loop.index }}" aria-expanded="false" aria-controls="services-{{ loop.index }}">
+                                    {%if service.icon %}
+                                        <i class="icon-service-facilities-{{ service.icon }}"></i>
+                                    {% else %}
+                                        <i class="icon-website-plus"></i>
+                                    {% endif %}
+                                        {{ service.title }}
+                                    </div>
+                                    <div id="services-{{ loop.index }}" class="collapse" aria-labelledby="services-header-{{ loop.index }}" data-parent="#services">
+                                        <div class="body">
+                                            <p>
+                                                A lot of text to explain your services
+                                            </p>  
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>               
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services | list with icons and title OLD PARALLAX -->
+    <section class="media parallax bg-black" data-handler="services" data-method="list" style="background-image: url('{{ imagepath }}/hotel-15.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5 class="title">Services</h5>
+                    <h2>In Hotel Victorino</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 mx-auto">
+                    <ul class="list-icons">
+                        {% for service in services %}
+                            {% if service.title %}
+                                <li>
+                                    <span>
+                                        <i class="icon-service-facilities-{{ service.icon }}"></i>{{ service.title }}
+                                    </span>
+                                </li>
+                            {% endif %}                        
+                        {% endfor %}                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- FAQ Block -->
+    <section data-handler="free-block" data-method="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Free-block</h5>
+                    <h2>FAQ block</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"> 
+                    <div class="accordion" id="faq">
+                        {% for faq in faqs %}
+                        <div class="card">
+                            <div class="header" role="button" id="faq-header-{{ loop.index }}" data-toggle="collapse" data-target="#faq-{{ loop.index }}" aria-expanded="false" aria-controls="faq-{{ loop.index }}">
+                                <i class="icon-website-plus"></i> {{ faq.question }}
+                            </div>
+                            <div id="faq-{{ loop.index }}" class="collapse" aria-labelledby="faq-header-{{ loop.index }}" data-parent="#faq">
+                                <div class="body">
+                                    <p>
+                                    {{ faq.answer }}
+                                    </p>  
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>               
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- menu-card block  -->
+    <section data-handler="free-block" data-method="menu-card">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="h5">Restaurant Victorino</p>
+                    <h4>Menu card</h4>
+                    <p>A small preview from our menu</p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="menu-card"> 
+                  <div class="card">
+                      <div class="header">
+                          <strong>Allways fresh</strong>
+                          <h5>Appetizers</h5>
+                          <p>Typical portuguese appetizers to go</p>
+                      </div>
+                      <div class="body">
+                          <table class="table">
+                              <tbody>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Gambas (small portion) 
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">In oliv oil, red chili &amp; garlic</small>
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      7,40&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Aperitivos(Tapas) Fish and seafood 
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">Fresh selection from fisch &amp; seafood with parsley, garlic &amp; portugiese oliv oil</small>   
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      11,90&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Aperitivos(Tapas) Meat  
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">Meat croquetes, chamuças, smoked ham </small>  
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      11,90&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Aperitivos(Tapas) mixed plate 
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">Rissóis, croquetes, chamuças, smoked ham and fresh goat cheese</small>   
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      11,90&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Calamares    
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">Fresh selection from fisch &amp; seafood with parsley, garlic &amp; portugiese oliv oil</small>  
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      8,50&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Ameijoa â B. Pato
+                                      <br>
+                                      <small class="d-none d-lg-inline-block">Clam shell with parsley, garlic &amp; portugiese oliv oil sauce &amp; tosted bread</small>      
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      11,90&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Fried Sardines   
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      7,00&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                                  <tr class="food-line">
+                                      <td class="food-name">
+                                      Bread, Ajoli, Olives    
+                                      </td>
+                                      <td class="text-primary text-right food-price">
+                                      3,90&nbsp;<small>EUR</small>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>                
+                      </div>
+                      <div class="images">
+                            <div class="col-12 col-md-4"><img src="{{ imagepath }}/gastronomy-48_414x414.jpg" alt=""></div>
+                            <div class="col-12 col-md-4"><img src="{{ imagepath }}/gastronomy-14_414x414.jpg" alt=""></div>
+                            <div class="col-12 col-md-4"><img src="{{ imagepath }}/gastronomy-42_414x414.jpg" alt=""></div>
+                      </div>
+                  </div>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="menu-card"> 
+                  <div class="card">
+                      <div class="header">
+                          <strong>Allways local</strong>
+                          <h5>
+                              Fish &amp; Seafood
+                          </h5>
+                          <p>Allways fresh &amp; best quality</p>
+                      </div>
+                      <div class="body">
+                          <table class="table">
+                              <tbody>
+                              <tr class="food-line">
+                                  <td class="food-name">
+                                  Lagosta  
+                                  <br>
+                                  <small class="d-none d-lg-inline-block">In oliv oil, red chili &amp; garlic</small>
+                                  </td>
+                                  <td class="text-primary text-right food-price">
+                                  45,00&nbsp;<small>EUR</small>
+                                  </td>
+                              </tr>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              Dourada 
+                              <br>
+                              <small class="d-none d-lg-inline-block">With potatoes, green salat, tomatoes with parsley, lemon &amp; portugiese oliv oil</small>   
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              16,90&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              Bacalhau dourado  
+                              <br>
+                              <small class="d-none d-lg-inline-block">With black olives, green salat and carot strips</small>  
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              24,60&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div class="images">
+                      </div>
+                  </div>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="menu-card"> 
+                  <div class="card">
+                      <div class="header">
+                          <strong>Allways delicious</strong>
+                          <h5>
+                              Drinks
+                          </h5>
+                          <p>Wine, cocktails &amp; more</p>
+                      </div>
+                      <div class="body">
+                          <table class="table">
+                              <tbody>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              0,3l Orange, Maracuja, Strawberrys &amp; Mango Juice  
+                              <br>
+                              <small class="d-none d-lg-inline-block">Fresh</small>
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              3,20&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              0,25l Water botle
+                              <br>
+                              <small class="d-none d-lg-inline-block">Sparkling or not, allways the best from Luso</small>   
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              1,90&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              0,4l Caipirinha  
+                              <br>
+                              <small class="d-none d-lg-inline-block">Fresh limes, brown sugar, cachaça &amp; crushed ice</small>  
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              7,60&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              <tr class="food-line">
+                              <td class="food-name">
+                              0,4l Mojito  
+                              <br>
+                              <small class="d-none d-lg-inline-block">Fresh limes, mint, brown sugar, brown old rum &amp; crushed ice</small>  
+                              </td>
+                              <td class="text-primary text-right food-price">
+                              7,60&nbsp;<small>EUR</small>
+                              </td>
+                              </tr>
+                              </tbody>
+                          </table>                                    
+                      </div>
+                      <div class="images">
+                            <div class="col-12 col-md-4"><img src="{{ imagepath }}/gastronomy-32_414x414.jpg" alt=""></div>
+                            <div class="col-12 col-md-4"><img src="{{ imagepath }}/gastronomy-19_414x414.jpg" alt=""></div>
+                      </div>
+                  </div>
+              </div>
+            </div> 
+        </div>
+    </section>
+    {% include "newsletter.html" %}
+    {% include "map.html" %}
+{% endblock %}

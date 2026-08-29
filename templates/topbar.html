@@ -1,0 +1,30 @@
+<!-- phone + languages + book button -->
+<div class="top-bar">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <a class="phone" href="tel:{{ hotelphone }}"> 
+                    <i class="icon-website-headset"></i> 
+                    <span>{{ hotelphone }}</span>
+                </a>
+                <a class="email" href="emailto:{{ hotelemail }}"> 
+                    <i class="icon-website-email"></i> 
+                    <span>{{ hotelemail }}</span>
+                </a>                
+            </div>
+            <div class=" languages">
+                <ul>
+                    <li class="active"><a href="index.html">DE</a></li>
+                    <li><a href="index.html">EN</a></li>
+                    <li><a href="index.html">AR</a></li>
+                    <li><a href="index.html">PT</a></li>
+                </ul>
+            </div>
+            <div class="reservation">
+                <a class="btn" href="{{ bookinglink }}" target="_blank">
+                    <span>Book now</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

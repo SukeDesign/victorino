@@ -1,0 +1,169 @@
+{% extends "layout.html" %}
+{% block pagetitle %}Restaurants{% endblock %}
+{% block swipper %} 
+    <!-- swipper with images and captions -->
+    <div data-handler="free-block" data-method="swipper">
+        <div id="restaurants-swiper-carousel-large" class="carousel carousel-fade slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+            {% for restaurant in restaurants %}
+                <li data-target="#restaurants-swiper-carousel-large" data-slide-to="{{ loop.index-1 }}"{% if loop.index == 1 %} class="active"{% endif %}>0{{ loop.index }}</li>
+            {% endfor %}
+            </ol>
+            <div class="carousel-inner">
+            {% for restaurant in restaurants %}
+                <div class="carousel-item mb-0{% if loop.index == 1 %} active{% endif %}">
+                    <figure>
+                        <img src="{{ imagepath }}/{{ restaurant.hero }}_1500x630.jpg" alt="{{ restaurant.title }}">
+                        <figcaption>
+                            <h5>
+                                {{ hotelname }} Bar & Restaurant                                                                       
+                            </h5>
+                            <h2>{{ restaurant.title }}</h2>
+                        </figcaption>
+                    </figure>
+                </div> 
+            {% endfor %}
+            </div> 
+        </div> 
+    </div>  
+{% endblock %}
+{% block content %}
+    <!-- restaurants teaser block -->
+    <section data-handler="restaurants" data-method="teaser">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>{{ hotelname }} Gastronomy</h5>
+                    <h2>Bars & restaurants</h2>
+                </div>
+            </div>
+            <div class="row">
+                {% for restaurant in restaurants %}
+                <article>
+                    <div class="card"> 
+                        <div class="image"> 
+                            <a href="{{ restaurant.link }}">  
+                                <picture>
+                                    <img src="{{ imagepath }}/{{ restaurant.hero }}_414x414.jpg" alt="{{ restaurant.title }}">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="body">
+                            <h5><a href="{{ restaurant.link }}">{{ restaurant.title }}</a></h5>                   
+                            <p>{{ restaurant.tables }} Tables & {{ restaurant.seats }} Seats</p>
+                            <a href="{{ restaurant.link }}" class="btn-details">
+                                <span data-hover="about this.">Read more</span>
+                            </a>
+                        </div>
+                    </div>
+                </article> 
+                {% endfor %}
+            </div>            
+        </div>
+    </section>
+    <!-- restaurants teaser mosaic block | only if more then 3 items  -->
+    <section data-handler="restaurants" data-method="teaser-mosaic">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>{{ hotelname }} Gastronomy</h5>
+                    <h2>Bars & restaurants</h2>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            {% for restaurant in restaurants %}
+                <figure class="grid-item item-{{ loop.index }}"> 
+                    <img src="{{ imagepath }}/{{ restaurant.image }}_1500x630.jpg" alt="{{ restaurant.title }}">
+                    <figcaption>
+                        {% if loop.index == 2 %}
+                        <h5 class="title">{{ restaurant.title }}</h5>
+                        {% else %}
+                        <h5>{{ restaurant.title }}</h5>
+                        {% endif %}
+                        <a href="{{ restaurant.link }}" class="btn-details">
+                            <span data-hover="location">Visit</span>
+                        </a> 
+                    </figcaption>
+                </figure>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- restaurants teaser horizontal block -->
+    <section data-handler="restaurants" data-method="teaser-horizontal">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>{{ hotelname }} Gastronomy</h5>
+                    <h2>Bars & restaurants</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {% for restaurant in restaurants %}
+                <article>  
+                    <div class="image">
+                        <p class="price">
+                            <i class="icon-website-seat"></i>
+                            <br>
+                            <small>{{ restaurant.seats }} seats</small>
+                        </p> 
+                        <img src="{{ imagepath }}/{{ restaurant.image }}_475x260.jpg" alt="{{ restaurant.title }}">
+                    </div>
+                    <div class="body">
+                        <h5>{{ restaurant.title }}</h5>
+                        <p>{{ restaurant.text }}</p>
+                        {% if restaurant.facilities %}
+                        <ul>
+                            {% for key in restaurant.facilities %}
+                                <li data-toggle="tooltip">
+                                    <i class="icon-service-hotel-{{ key }}"></i>
+                                    <span>{{ key }}</span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        <a href="{{ restaurant.link }}" class="btn-details">
+                            <span data-hover="location">Visit</span>
+                        </a> 
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- restaurants table-view -->
+    <section data-handler="restaurants" data-method="table-view">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="title">Bars & restaurants</h2>
+                    <p>5 Stars Chefs and Cuisine</p>
+                </div>
+            </div>
+            <div class="row card-deck">
+                <div class="card border p-2">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                           <tr>
+                                <th>Restaurant Name</th>
+                                <th>Accepted Payments</th>
+                                <th class="text-center d-none d-sm-table-cell">Seats</th>
+                                <th class="text-center d-none d-sm-table-cell">Tables</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for restaurant in restaurants %}
+                            <tr>
+                               <td><a href="{{ restaurant.link }}">{{ restaurant.title }}</a></td>
+                               <td>{{ restaurant.payment }}</td>
+                               <td class="text-center d-none d-sm-table-cell">{{ restaurant.seats }}</td>
+                               <td class="text-center d-none d-sm-table-cell">{{ restaurant.tables }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>  
+        </div>                  
+    </section> 
+{% endblock %}

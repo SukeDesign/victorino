@@ -1,0 +1,175 @@
+{% extends "layout.html" %}
+{% block pagetitle %} Extras {% endblock %}
+{% block swipper %} 
+    <!-- swipper with images and captions -->
+    <div data-handler="free-block" data-method="swipper">
+        <div id="extras-swiper-carousel-large" class="carousel carousel-fade slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+            {% for extra in extras %}
+                <li data-target="#extras-swiper-carousel-large" data-slide-to="{{ loop.index-1 }}"{% if loop.index == 1 %} class="active"{% endif %}>0{{ loop.index }}</li>
+            {% endfor %}
+            </ol>
+            <div class="carousel-inner">
+            {% for extra in extras %}
+                <div class="carousel-item mb-0{% if loop.index == 1 %} active{% endif %}">
+                    <figure>
+                        {%if extra.hero %}
+                        <img src="{{ imagepath }}/{{ extra.hero }}_1500x630.jpg" alt="{{ extra.title }}">
+                        {% else %}
+                        <img src="{{ imagepath }}/1500x630.jpg" alt="{{ extra.title }}">
+                        {% endif %}
+                        <figcaption>
+                            <h5>
+                                {{ hotelname }} Extras                                      
+                            </h5>
+                            <h2>{{ extra.title }}</h2>
+                        </figcaption>
+                    </figure>
+                </div> 
+            {% endfor %}
+            </div> 
+        </div>
+        {% include "addajet.html" %}
+    </div>   
+{% endblock %}
+{% block content %}
+    <!-- extras with image no price - accordion-view  -->
+    <section data-handler="includes" data-method="accordion">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Extra service for you</h5>
+                    <h2>{{ hotelname }} Extras</h2>
+                    <p>This are included extras for offers & conferenceextras. We show no prices here.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    {% include "includes.html" %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Extras with image and price - accordion-view -->
+    <section data-handler="extras" data-method="accordion">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Extra service for you</h5>
+                    <h2>{{ hotelname }} Extras</h2>
+                    <p>Some text about our extras with image and price - accordion-view</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    {% include "extras.html" %}          
+                </div>
+            </div>                    
+        </div>
+    </section>
+    <!-- extras with categories - accordion-view  -->
+    <section data-handler="extras" data-method="accordion">
+       <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Extra service for you</h5>
+                    <h2>{{ hotelname }} Extras</h2>
+                    <p>Some text about our extras with categories - accordion-view</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                   {% include "categories.html" %}                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- extras teaser block -->
+    <section data-handler="extras" data-method="teaser">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Bookable online or on Check-In</h5>
+                    <h2>Our Extras</h2>
+                    <p>Some text about our extras as teaser</p>
+                </div>
+            </div>
+            <div class="row">
+                {% for extra in extras %}
+                <article>
+                    <div class="card"> 
+                        <div class="image"> 
+                            <picture>
+                                <img src="{{ imagepath }}/{{ extra.hero }}_414x414.jpg" alt="{{ extra.title }}">
+                            </picture>
+                        </div>
+                        <div class="body">
+                            <p class="price">
+                                {{ currency }}{{ extra.price }}
+                                <small>{{ extra.unit }}</small>
+                            </p>
+                            <h5>{{ extra.title }}</h5>                   
+                            <p>{{ extra.text }}</p>
+                        </div>
+                    </div>
+                </article> 
+                {% endfor %}
+            </div>            
+        </div>
+    </section>
+    <!-- extras teaser horizontal block -->
+    <section data-handler="extras" data-method="teaser-horizontal">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Bookable online or on Check-In</h5>
+                    <h2>Our Extras</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {% for extra in extras %}
+                <article>  
+                    <div class="image">
+                        <p class="price">
+                            {{ currency }}{{ extra.price }}<br><small>{{ extra.unit }}</small>
+                        </p> 
+                        <img src="{{ imagepath }}/{{ extra.image }}_475x260.jpg" alt="{{ extra.title }}">
+                    </div>
+                    <div class="body">
+                        <h5>{{ extra.title }}</h5>
+                        <p>{{ extra.text }}</p>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- extras teaser mosaic block | only if more then 3 items  -->
+    <section data-handler="extras" data-method="teaser-mosaic">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Bookable online or on Check-In</h5>
+                    <h2>Our Extras</h2>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            {% for extra in extras %}
+                <figure class="grid-item item-{{ loop.index }}"> 
+                    <img src="{{ imagepath }}/{{ extra.image }}_1500x630.jpg" alt="{{ extra.title }}">
+                    <figcaption>
+                        {% if loop.index == 2 or loop.index == 5 %}
+                        <h5 class="title">{{ extra.title }}</h5>
+                        {% else %}
+                        <h5>{{ extra.title }}</h5>
+                        {% endif %}
+                        <p>
+                            {{ currency }}{{ extra.price }} <small>{{ extra.unit }}</small>
+                        </p> 
+                    </figcaption>
+                </figure>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

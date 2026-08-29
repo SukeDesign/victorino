@@ -1,0 +1,233 @@
+{% extends "layout.html" %}
+{% block pagetitle %} Room details {% endblock %}
+{% block swipper %} 
+    <!-- swipper with images and captions -->
+    <div data-handler="free-block" data-method="swipper">
+        {% for room in rooms %}
+            {% if loop.first %}
+                <section class="hero" data-handler="free-block" data-method="swipper">
+                    <figure>
+                        <picture>
+                            {%if room.hero %}
+                                <img src="{{ imagepath }}/{{ room.hero }}_1500x630.jpg" alt="{{ room.title }}">
+                            {% else %}
+                                <img src="{{ imagepath }}/1500x630.jpg" alt="{{ room.title }}">
+                            {% endif %}
+                        </picture>
+                        <figcaption>
+                            <h5>
+                                {{ hotelname }} Rooms & Suites                                            
+                            </h5>
+                            <h2>{{ room.title }}</h2>
+                        </figcaption>
+                    </figure>
+                </section>
+            {% endif %}
+        {% endfor %}
+        {% include "addajet.html" %}
+    </div>  
+{% endblock %}
+{% block content %}
+    {% for room in rooms %}
+        {% if loop.first %}
+        <article data-handler="room" data-method="details">
+            <div class="row">
+                <!-- left | title + price + text + buttons + facilities + images -->
+                <div class="col-12 col-md-8">
+                    <div data-step="description">
+                        <h5>from {{ currency }}{{ room.price }} per night</h5>
+                        <h2>{{ room.title }}</h2>
+                        <p>
+                            The single rooms in the Classic category offer very comfortable living. Between 15 m² and 24 m² in size, the majority of rooms are very spacious. These single rooms are equipped with a cosy seating corner, most have a desk, some have a walk-in wardrobe, and all have a safe or a locker, TV, telephone and Telekom W-LAN Internet access (free of charge). Some of the single rooms can be interconnected through internal doors. The bathrooms are equipped with a bathtub or shower, WC, cosmetic mirror, hairdryer and bath robe.
+                        </p>
+                    </div>
+                    <div data-step="buttons">
+                        <a class="btn-details btn-border" href="{{ bookinglink }}" target="_blank">
+                            <i class="icon-website-calendar"></i> 
+                            <span data-hover="room"> 
+                                Book this
+                            </span>
+                        </a>
+                        <a class="btn-details btn-border" data-toggle="modal" data-target="#room-request">
+                            <i class="icon-website-chart"></i>
+                            <span data-hover="formular"> 
+                                 Request  
+                            </span>
+                        </a>
+                        <a class="btn-details btn-border" data-toggle="modal" data-target="#room-panorama">
+                            <i class="icon-website-video"></i> 
+                            <span data-hover="panorama"> 
+                                360° view
+                            </span>
+                        </a>
+                    </div>
+                    <!-- facilities -->
+                    <div data-step="list">
+                        <h5>Facilities</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="icon-website-check"></i>
+                                Optional child's bed 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                lockable cupboard 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                writing set 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                desk 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                couch 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                room safe 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                toilet 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                bathtub/shower 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                bathrobe 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                hair dryer 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                towel warmer 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                cosmetic mirror 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                bedside telephone 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                TV remote control 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                SAT TV 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                modem connection 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                wireless LAN
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-step="extras">
+                        <h5>Extras</h5>
+                        {% include "extras.html" %}
+                    </div>
+                </div>
+                <!-- right | characteristics -->
+                <div class="col-12 col-md-4">
+                    <div data-step="tables">
+                        <div class="card">  
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Characteristics</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Size:
+                                        </th>
+                                        <td>{{ room.size }} m²</td>
+                                    </tr>
+                                    <tr>                                    
+                                        <th>
+                                            Bed type:
+                                        </th>
+                                        <td>King size bed</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Occupancy:
+                                        </th>
+                                        <td>{{ room.occupancy }} Person(s)</td>
+                                    </tr>
+                                    <tr>    
+                                        <th>
+                                            Extrabeds
+                                        </th>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            View:
+                                        </th>
+                                        <td>{{ room.view }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Handicapped:
+                                        </th>
+                                        <td>{{ room.handicapped }}</td>
+                                    </tr>
+                                    <tr>    
+                                        <th>
+                                            Non smoking
+                                        </th>
+                                        <td>{{ room.smokefree }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Number of rooms:
+                                        </th>
+                                        <td>{{ room.amountrooms }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- gallery if more then 3 use carousel -->
+                    <div data-step="gallery">
+                        <div class="card"> 
+                            <img src="{{ imagepath }}/room-3_414x414.jpg" alt="{{ room.title }}">
+                        </div>
+                        <div class="card"> 
+                            <img src="{{ imagepath }}/room-18_414x414.jpg" alt="{{ room.title }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="modal" id="room-request">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Request informations about {{ room.title }}</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        {% include "contact-form.html" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,189 @@
+{% extends "layout.html" %}
+{% block pagetitle %}Events & Locations{% endblock %}
+{% block swipper %} 
+    <!-- swipper with images and captions -->
+    <div data-handler="free-block" data-method="swipper">
+        <div id="events-swiper-carousel-large" class="carousel carousel-fade slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+            {% for event in events %}
+                <li data-target="#events-swiper-carousel-large" data-slide-to="{{ loop.index-1 }}"{% if loop.index == 1 %} class="active"{% endif %}>0{{ loop.index }}</li>
+            {% endfor %}
+            </ol>
+            <div class="carousel-inner">
+            {% for event in events %}
+                <div class="carousel-item mb-0{% if loop.index == 1 %} active{% endif %}">
+                    <figure>
+                        {%if event.hero %}
+                        <img src="{{ imagepath }}/{{ event.hero }}_1500x630.jpg" alt="{{ event.title }}">
+                        {% else %}
+                        <img src="{{ imagepath }}/1500x630.jpg" alt="{{ event.title }}">
+                        {% endif %}
+                        <figcaption>
+                            <h5>
+                                {{ hotelname }} Events                             
+                            </h5>
+                            <h2>{{ event.title }}</h2>
+                        </figcaption>
+                    </figure>
+                </div> 
+            {% endfor %}
+            </div> 
+        </div> 
+        {% include "addajet.html" %}
+    </div>
+{% endblock %}
+{% block content %}
+    <!-- events teaser slider block | only if more then 3 items  -->
+    <section data-handler="events" data-method="teaser-horizontal">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Events</h5>
+                    <h2>Sport & Culture</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {% for event in events %}
+                <article>  
+                    <div class="image">
+                        <p class="date">
+                            {{ event.day }}
+                            <small>{{ event.month }}</small>
+                        </p> 
+                        <img src="{{ imagepath }}/{{ event.image }}_475x260.jpg" alt="{{ event.title }}">
+                    </div>
+                    <div class="body">
+                        <h5>{{ event.title }}</h5>
+                        <p>
+                            {% for location in event.location %}
+                                <a href="{{ location.link }}" target="_blank">
+                                    <i class="icon-website-sign"></i>
+                                    {{ location.title }}
+                                </a>
+                            {% endfor %}
+                        </p>
+                        <p>{{ event.text }}</p>
+                        <a href="{{ event.link }}" class="btn-details">
+                            <span data-hover="event"> Visit </span>
+                        </a> 
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+    <!-- events teaser mosaic block -->
+    <section data-handler="events" data-method="teaser-mosaic">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Events</h5>
+                    <h2>Sport & Culture</h2>
+                    <!-- only if there's a link -->
+                    <a href="events.html" class="btn-details">
+                        <span data-hover="...and locations">See all events</span>
+                    </a> 
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            {% for event in events %}
+                <figure class="grid-item item-{{ loop.index }}">  
+                    <img src="{{ imagepath }}/{{ event.image }}_1500x630.jpg" alt="{{ event.title }}">
+                    <figcaption>
+                        {% if loop.index == 3 %}
+                        <h5 class="title">{{ event.title }}</h5>
+                        {% else %}
+                        <h5>{{ event.title }}</h5>
+                        {% endif %}
+                        <a href="{{ event.link }}" class="btn-details">
+                            <span data-hover="about this."> Read more... </span>
+                        </a> 
+                    </figcaption>
+                </figure>
+            {% endfor %}                        
+        </div>
+    </section>
+    <!-- events teaser block -->
+    <section data-handler="events" data-method="teaser">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <h2>Special events</h2>
+                </div>
+            </div>
+            <div class="row">
+                {% for event in events %}
+                <article>
+                    <div class="card">
+                        <div class="image"> 
+                            <a href="{{ event.link }}">  
+                                <picture>
+                                    <img src="{{ imagepath }}/{{ event.hero }}_414x414.jpg" alt="{{ event.title }}" class="w-100">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="body"> 
+                            <p class="date">
+                                {{ event.day }}
+                                <small>{{ event.month }}</small>
+                            </p>
+                            <h5><a href="{{ event.link }}">{{ event.title }}</a></h5>                   
+                            <p>
+                                {% for location in event.location %}
+                                    <a href="{{ location.link }}" target="_blank">
+                                        {{ location.title }}
+                                    </a>
+                                {% endfor %}
+                            </p>
+                            <a href="{{ event.link }}" class="btn-details">
+                                <span data-hover="about this.">Read more...</span>
+                            </a>
+                        </div>
+                    </div>
+                </article> 
+                {% endfor %}
+            </div>            
+        </div>
+    </section>
+    <!-- events table-view -->
+    <section data-handler="events" data-method="table-view">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>{{ hotelname }} Events</h2>
+                    <p>Precious moments for you and your family</p>
+                </div>
+            </div>
+            <div class="row card-deck">
+                <div class="card border p-2">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Event Name</th>
+                                <th>Location</th>
+                                <th>Period</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for event in events %}
+                            <tr>
+                                <td><a href="{{ event.link }}">{{ event.title }}</a></td>
+                                <td>
+                                    {% for location in event.location %}
+                                    <a href="{{ location.link }}">
+                                        {{ location.title }}
+                                    </a>
+                                    {% endfor %}
+                                </td>
+                                <td>{{ event.day }} {{ event.month }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>  
+        </div>                  
+    </section>
+{% endblock %}

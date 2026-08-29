@@ -1,0 +1,247 @@
+{
+    "viewports": [
+        "1200",
+        "1024",
+        "768",
+        "568",
+        "320"
+    ],
+    "images": {
+        "hero": {
+            "1200": {
+                "width": "1500",
+                "height": "630"
+            },
+            "1024": {
+                "width": "1024",
+                "height": "375"
+            },
+            "768": {
+                "width": "768",
+                "height": "280"
+            },
+            "568": {
+                "width": "736",
+                "height": "314"
+            },
+            "320": {
+                "width": "414",
+                "height": "414"
+            },
+            "default": {
+                "width": "1500",
+                "height": "630"
+            }
+        },
+        "large-teaser": {
+            "1200": {
+                "width": "475",
+                "height": "260"
+            },
+            "1024": {
+                "width": "475",
+                "height": "260"
+            },
+            "768": {
+                "width": "475",
+                "height": "260"
+            },
+            "568": {
+                "width": "475",
+                "height": "260"
+            },
+            "320": {
+                "width": "475",
+                "height": "260"
+            },
+            "default": {
+                "width": "475",
+                "height": "260"
+            }
+        },
+        "square-teaser": {
+            "1200": {
+                "width": "414",
+                "height": "414"
+            },
+            "1024": {
+                "width": "414",
+                "height": "414"
+            },
+            "768": {
+                "width": "414",
+                "height": "414"
+            },
+            "568": {
+                "width": "414",
+                "height": "414"
+            },
+            "320": {
+                "width": "414",
+                "height": "414"
+            },
+            "default": {
+                "width": "414",
+                "height": "414"
+            }
+        },
+        "small-teaser": {
+            "1200": {
+                "width": "370",
+                "height": "270"
+            },
+            "1024": {
+                "width": "310",
+                "height": "230"
+            },
+            "768": {
+                "width": "355",
+                "height": "260"
+            },
+            "568": {
+                "width": "370",
+                "height": "270"
+            },
+            "320": {
+                "width": "370",
+                "height": "270"
+            },
+            "default": {
+                "width": "370",
+                "height": "270"
+            }
+        },
+        "detail-view": {
+            "1200": {
+                "width": "770",
+                "height": "470"
+            },
+            "1024": {
+                "width": "770",
+                "height": "470"
+            },
+            "768": {
+                "width": "770",
+                "height": "470"
+            },
+            "568": {
+                "width": "770",
+                "height": "470"
+            },
+            "320": {
+                "width": "770",
+                "height": "470"
+            },
+            "default": {
+                "width": "770",
+                "height": "470"
+            }
+        },     
+        "blockquote": {
+            "1200": {
+                "width": "160",
+                "height": "160"
+            },
+            "1024": {
+                "width": "160",
+                "height": "160"
+            },
+            "768": {
+                "width": "160",
+                "height": "160"
+            },
+            "568": {
+                "width": "160",
+                "height": "160"
+            },
+            "320": {
+                "width": "160",
+                "height": "160"
+            },
+            "default": {
+                "width": "160",
+                "height": "160"
+            }
+        },
+        "gallery": {
+            "feature" : {
+                "1200": {
+                    "width": "960",
+                    "height": "630"
+                },
+                "1024": {
+                    "width": "994",
+                    "height": "666"
+                },
+                "768": {
+                    "width": "738",
+                    "height": "472"
+                },
+                "568": {
+                    "width": "706",
+                    "height": "448"
+                },
+                "320": {
+                    "width": "384",
+                    "height": "237"
+                },
+                "default": {
+                    "width": "960",
+                    "height": "630"
+                }
+            },
+            "small-feature" : {
+                "1200": {
+                    "width": "480",
+                    "height": "320"
+                },
+                "1024": {
+                    "width": "497",
+                    "height": "333"
+                },
+                "768": {
+                    "width": "369",
+                    "height": "236"
+                },
+                "568": {
+                    "width": "353",
+                    "height": "225"
+                },
+                "320": {
+                    "width": "192",
+                    "height": "119"
+                },
+                "default": {
+                    "width": "480",
+                    "height": "320"
+                }    
+            },
+            "portrait" : {
+                "1200": {
+                    "width": "480",
+                    "height": "630"
+                },
+                "1024": {
+                    "width": "497",
+                    "height": "666"
+                },
+                "768": {
+                    "width": "369",
+                    "height": "472"
+                },
+                "568": {
+                    "width": "353",
+                    "height": "449"
+                },
+                "320": {
+                    "width": "192",
+                    "height": "237"
+                },
+                "default": {
+                    "width": "480",
+                    "height": "630"
+                }    
+            }
+        }
+    }
+}

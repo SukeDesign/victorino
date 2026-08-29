@@ -1,0 +1,738 @@
+header {
+    .hide-on-top { display: none; } // btn-reservation on top-bar
+}
+.addajet-booking-bar {
+    position: absolute;
+    width:80%;
+    top:40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding:15px;
+    background: $booking-form-bg;
+    z-index: 9;
+    @extend .row;
+    @extend .justify-content-center;
+    a.btn-reservation {
+        display:none;
+    }
+    .searchBoxContainer {
+        .searchBoxInnerContainer {
+            background:none transparent;
+            label {
+                font: {
+                    family: $font-family-1, serif;
+                    size: 14px;
+                    weight:400;                                     
+                }
+                line-height:0;
+                color:inherit;
+            }
+            input {
+                float: left;
+                width: 70%;
+                height: 30px;
+                @media (min-width: 414px){
+                    height: 40px;
+                }
+                padding: 0;
+                box-shadow: none;
+                border: none;
+                background: transparent;                    
+                color: $booking-form-color;
+                font-family: $font-family-1, serif;
+            }
+            select {
+                float: left;
+                width: 70%;
+                height: 40px;
+                padding: 0;
+                box-shadow: none;
+                border: none;
+                outline: none;
+                background: transparent;                    
+                color: $booking-form-color;
+                font-family: $font-family-1, serif;
+            }
+            .establishmentContainer { 
+                display:none; 
+                visibility: hidden;
+                height:0;
+                overflow:hidden;
+            }  
+            #dateFromContainer1 {
+                @extend .mr-sm-0;
+                @extend .mr-xl-4;
+            } 
+            #dateFromContainer1,#dateToContainer1 {
+                background: $booking-form-fields-bg;
+                color: $booking-form-fields-color;
+                border:1px solid $booking-form-fields-border;
+                @extend .col-12;
+                @extend .col-sm-6;
+                @extend .col-xl-5;
+                margin-bottom:5px;
+                padding:5px 10px;
+                height: 40px;
+                @media (min-width: 414px) {
+                    height: 80px;
+                    padding:15px;
+                }
+                &:before {
+                    float:left;
+                    font-family: 'facilities' !important;
+                    content: '\55';
+                    color: $booking-form-btn-bg;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height:30px;
+                    font-size: 1.5em;
+                    @media (min-width: 414px) {
+                        line-height:50px;
+                        font-size: 2em;
+                    }
+                }
+            }
+            #numberOfGroupsContainer1 {
+                float:left;
+                width: 100%;
+                height: 40px;
+                padding:5px 10px;
+                line-height: 14px;
+                background: $booking-form-fields-bg;
+                color: $booking-form-fields-color;
+                border:1px solid $booking-form-fields-border;
+                @media (min-width: 414px) {
+                    height: 80px;
+                    padding:15px !important;
+                }
+                margin:0 0 5px;
+                &:before {
+                    float:left;
+                    content: '\66';
+                    speak: none;
+                    font: {
+                        family: 'facilities' !important;                            
+                        style: normal;
+                        weight: normal;
+                        variant: normal;
+                        size: 1.5em;
+                        weight:400;                                     
+                    }
+                    text-transform: none;
+                    color: $booking-form-btn-bg;
+                    line-height: 25px;
+                    padding-left: 10px;
+                    @media (min-width: 414px) {
+                        line-height:50px;
+                        font-size: 2em;
+                        padding-left: 0;
+                    }
+                }
+                select {
+                    padding-left:30px;
+                    height: 30px;
+                    @media (min-width: 414px) {
+                        height: 50px;
+                    }
+                }
+            }
+            #accommodationCodesContainer1 {
+                @extend .col-12;
+                @extend .col-xl-5;
+                @extend .mx-auto;
+                @extend .mx-xl-0;
+                @extend .px-0;
+            }
+            .codeLinksContainer {
+                @extend .col-12;
+                @extend .px-0;
+                margin: 0 auto 5px;
+                text-align: center;
+                a { 
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height:18px;
+                    padding:0 15px;
+                    color: $booking-form-color;
+                    white-space: nowrap;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .codeContainer {
+                @extend .col-12;
+                @extend .mx-0;
+                @extend .col-sm-10;
+                @extend .mx-sm-auto;
+                background:$booking-form-bg;
+                input {
+                    float: none;
+                    width: 100%;
+                    height: 50px;
+                    text-align: center;
+                }
+            }
+            // button
+            .text_align_opposite {
+                @extend .col-12;
+                @extend .px-1;
+                @extend .col-xl-2;
+                margin: 0 0 5px;
+                button {
+                    width: 100%;
+                    height: 50px;
+                    line-height:10px;
+                    padding:10px 0;
+                    @media (min-width: 414px) {
+                        height: 70px;
+                        line-height:30px;
+                        padding:15px 0;
+                    }
+                    font-size: 15px;
+                    text-align: center;
+                    background-color: $booking-form-btn-bg;
+                    color: $booking-form-btn-color;
+                    border: 1px solid $booking-form-btn-color;
+                    background-image: none;
+                    &:hover,&:focus,&:visited {
+                        background-color: darken($booking-form-btn-bg,15%);
+                        color: $booking-form-btn-color;
+                        border: 1px solid $booking-form-btn-color;
+                        outline: none;
+                    }
+                }
+            }
+            // rooms + persons collapse
+            .groupsContainer {
+                display:none; 
+                clear:both;
+                position: relative;
+                top:0;
+                bottom:auto;
+                width:100%;
+                padding: 0;
+                .groupContainer {
+                    @extend .flex-column;
+                    margin:0 0 10px;
+                    padding:5px;
+                    transition: .3s ease;
+                    background: $booking-form-bg;
+                    box-shadow: 0 2px 5px rgba($black, .65);
+                    @media (min-width: 414px) {
+                        padding:15px 15px 15px 10px;
+                    }
+                    label {
+                        color:$booking-form-color;
+                    }
+                    .groupContainerInner {
+                        width:100%;
+                        padding: 0;
+                        @extend .mx-auto;
+                        .width_49 {
+                            width:100%;
+                            padding: 0;
+                            margin: 0 0 5px;
+                        }
+                        input[type=text],input[type=password],select {
+                            width: 100%;
+                            padding:5px 15px;
+                            margin-bottom: 5px;
+                            border:1px solid $booking-form-fields-border;
+                        }
+                        [id^="groupChildrenAgesSpacer1_"] {
+                            display: none;
+                        }
+                        [id^="groupChildrenAgesContainer1_"] {
+                            @extend .flex-row;
+                            @extend .justify-content-between;
+                            padding: 15px 10px 15px 15px;
+                            .groupChildAgeContainer {
+                                @extend .col;
+                                @extend .p-1;
+                                @extend .py-xl-0;
+                                select {
+                                    padding:5px;
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+            @media (max-width: 414px) {
+                #dateFromContainer1,#dateToContainer1 {
+                    padding-top:0;
+                    &:before {
+                        padding-top:10px;
+                    }
+                }
+                #numberOfGroupsContainer1 {
+                    padding:0;
+                    &:before {
+                        padding:10px;
+                    }
+                    select {
+                        padding-top: 0;
+                        padding-left: 0;
+                        height:30px;
+                    }
+                }                    
+            }
+            @media (max-width: 500px) {
+                #datesContainer1,#numberOfGroupsContainer1,
+                #accommodationCodesContainer1,#buttonContainer1 {
+                    clear:both;
+                    position: relative;
+                    top:0;
+                    left:0;
+                    width: 100%;
+                    margin:0;
+                    padding:0;
+                }
+                #accommodationCodesContainer1 {
+                    float: left;
+                    padding:5px 15px;
+                }
+                #accommodationAgencyUsernameContainer1 {
+                    input {
+                        border-bottom: 1px solid $booking-form-color;
+                    }
+                }
+            }
+        }
+    }
+    #establishmentDestinationContainer1 {
+        display: none;
+    }
+    @media (min-width: 414px) {
+        top:25%;
+    }
+    @media (min-width: 1200px) {
+        top:auto;
+        width: 80%;
+        left:0;
+        right:0;
+        bottom: 5%;
+        padding: 25px;
+        box-shadow: 0 0 15px rgba($black, .85);
+        overflow: visible;
+        a.btn-reservation {
+            clear:both;
+            display:block;
+            position: relative;
+            top:20px;
+            width: 20%;
+            margin:0 40%;
+            text-align: center;
+            background: $booking-form-btn-bg;
+            color: $booking-form-btn-color;
+            overflow: hidden;
+            i { display:none }
+            span { 
+                display:inline-block; 
+                font-size: 1rem;
+                color: inherit;
+            }
+            &:hover {
+                background: $booking-form-btn-bg-hover;
+                color: $booking-form-btn-color;
+            }
+        }
+        .searchBoxContainer {
+            width:100%;
+            max-width: 1100px;
+            margin:0 auto;
+            .searchBoxInnerContainer {
+                div {
+                    clear:none;
+                    float:left;
+                }
+                input[type=text],input[type=password],select {
+                    float:left;
+                    display:inline-block;
+                    height:50px;
+                    margin:0;
+                }
+                #datesContainer1 {
+                    margin: 0 -15px;
+                }
+                #datesContainer1,
+                #numberOfGroupsContainer1,
+                #accommodationCodesContainer1,
+                #buttonContainer1 
+                {
+                    clear: none;
+                    float:left;
+                }
+                #dateFromContainer1,#dateToContainer1 {
+                    width: auto;
+                }
+                .width_49 {
+                    clear:none;
+                    float:left;
+                    display:inline-block;
+                    width:auto;
+                }
+                #numberOfGroupsContainer1 {
+                    width: auto;
+                    padding:15px;
+                    margin:0 0 0 -15px;
+                    select {
+                        width:auto;
+                        padding:0 15px;
+                    }
+                }
+                #accommodationCodesContainer1 {
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                    margin:0 0 0 15px;
+                    padding:0;
+                    text-align: center;
+                }
+                .codeLinksContainer {
+                    width: 100%;
+                    text-align: center;                    
+                    margin: 0 auto;
+                    padding:15px;
+                    a { 
+                        float:left;
+                        display: block;
+                        width: 50%;
+                        line-height:50px;
+                    }
+                }
+                .codeContainer {
+                    position: absolute; 
+                    bottom: 100%; 
+                    width:300px; 
+                    left:25%; 
+                    right:0; 
+                    margin: 15px auto;
+                    padding:15px;
+                    z-index: 10;
+                    background-color: $booking-form-bg;  
+                    >div {
+                        clear:both;
+                        float: none;
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+                    input {
+                        float: none;
+                        width: 100%;
+                        height: 50px;
+                        text-align: center;
+                        background-color: $booking-form-fields-bg;
+                        border:1px solid $booking-form-fields-border;
+                        color:$booking-form-fields-color;
+                    }
+                }
+                /* accomodation modal */
+                .groupsContainer {
+                    display:none; 
+                    position: absolute; 
+                    bottom:auto;
+                    top:115%; 
+                    width: 600px;
+                    left:0; 
+                    right:0; 
+                    margin:0 auto;
+                    padding:15px;
+                    z-index:11;
+                    .groupContainer {
+                        clear: both;
+                        float:none;
+                        width: 100%;
+                        margin:0 0 10px;
+                    }
+                    .groupContainerInner {
+                        width: 100%;
+                        >.groupLabel { 
+                            display: block; 
+                            margin-bottom: 1rem;
+                            font-size:1.2rem;
+                            color:$booking-form-color;
+                            text-shadow:none;
+                        }
+                        [id^="groupInputContainer1_"] {
+                            width:270px;
+                            .width_49 {
+                                width:50%;
+                                margin: 0;
+                                &:first-child {
+                                    width:48%;
+                                    margin-right:2%;
+                                }
+                            }
+                        }
+                        [id^="groupChildrenAgesSpacer1_"] {
+                            display: none;
+                        }
+                        .groupChildAgeContainer {
+                            padding-top: 0 !important;
+                        }
+                        [id^="groupChildrenAgesContainer1_"] {
+                            float: right;
+                            position: relative;
+                            width:270px;
+                            padding-top: 0 !important;
+                            label {
+                                position: absolute;
+                                top:-14px;
+                                margin-bottom:-65px !important;
+                                width:270px;
+                                font-size:1.2rem;
+                                color:$booking-form-color;
+                                text-shadow:none;
+                                white-space: nowrap;
+                                line-height: 0;
+                            }
+                        }
+                    }
+                }
+                .text_align_opposite {
+                    float:right !important;
+                    width: auto;
+                    max-width: 20%;
+                    margin: 0;
+                    button {
+                        height: 80px;
+                        padding-left:15px;
+                        padding-right:15px;
+                    }
+                }
+            }
+        }
+    }
+    @media (orientation: landscape) and (max-width: 992px) {
+        top:auto;
+        bottom: 30px;
+        left:15px;
+        right:15px;
+        width:calc( 100% - 30px );
+        transform:translateX(0);
+        .searchBoxContainer {
+            width: 100%;
+            .searchBoxInnerContainer {
+                div {
+                    clear:none;
+                    float:left;
+                }
+                input[type=text],input[type=password],select {
+                    float:left;
+                    display:inline-block;
+                    margin:0;
+                    height: 21px;
+                }
+                label {
+                    line-height:20px;
+                }
+                #datesContainer1 {
+                    float: left;
+                    width: 35%;
+                    #dateFromContainer1,#dateToContainer1 {
+                        float: left;
+                        width: 48%;
+                        max-width: 48%;
+                        height: 30px;
+                        padding: 5px;
+                        margin-right: 2% !important;
+                        &:before {
+                            line-height:20px;
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                #numberOfGroupsContainer1 {
+                    float: left;
+                    width: 20%;
+                    height: 30px;
+                    padding:5px!important;
+                    line-height: 14px;
+                    &:before {
+                        line-height:20px;
+                        font-size: 1.5em;
+                    }
+                    select {
+                        height:21px;
+                        padding-left: 0;
+                    }
+                }
+                #accommodationCodesContainer1 {
+                    float:left;
+                    width:20%;
+                }
+                .codeContainer {
+                    position: absolute;
+                    bottom: 40px;
+                    padding: 5px;
+                    background: #fff;
+                }
+                .codeLinksContainer {
+                    margin: 0;
+                    text-align: center;
+                    a {
+                        font-size: 11px;
+                        padding: 0 1%;
+                    }
+                }
+                #buttonContainer1 {
+                    float:right;
+                    width:25%;
+                }
+                .text_align_opposite button {
+                    height: 30px;
+                    line-height: 0;
+                    padding: 0;
+                }
+                .groupsContainer {
+                    display:none; 
+                    position: absolute; 
+                    bottom:40px;
+                    top:auto; 
+                    width: 100%;
+                    left:0; 
+                    right:0; 
+                    margin:0;
+                    padding:5px;
+                    z-index:11;
+                    .groupContainer {
+                        clear: both;
+                        float:none;
+                        width: 100%;
+                        margin:0 0 10px;
+                        .width_49 {
+                            clear:none;
+                            float:left;
+                            select {
+                                padding:0;
+                            }
+                        }
+                    }
+                    .groupContainerInner {
+                        label {
+                            float: left;
+                            width: auto;
+                            margin-right: 5px;
+                        }
+                        select {
+                            height: 30px;
+                            padding:0;
+                        }
+                        [id^="groupInputContainer1_"] {
+                            clear: none;
+                            float: left;
+                            width:30%;
+                            .width_49 {
+                                width:50%;
+                                margin: 0;
+                                padding:0;
+                                &:first-child {
+                                    width:48%;
+                                    margin-right:2%;
+                                }
+                            }
+                        }
+                        [id^="groupChildrenAgesContainer1_"] {
+                            float: right;
+                            position: relative;
+                            width:60%;
+                            padding-top: 0 !important;
+                            label {
+                                position: absolute;
+                                top:-28px;
+                                margin-bottom:-65px !important;
+                                width:270px;
+                                font-size:1.2rem;
+                                white-space: nowrap;
+                                line-height: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) and (max-width: 992px) {
+    .ui-datepicker {
+        position: absolute !important;
+        -webkit-transform: translate(0, -25%);
+        transform: translate(0, -25%);
+        th {
+            padding: 5px;
+        }
+        td span,td a {
+            padding: 5px;
+        }
+    }
+}
+/* WEB-2180 | booking bar in a small modal for rooms (we don't use it here yet) */
+.modal-open {
+    #booking-mask {
+        @import url('https://api.direct-reservation.net/search/1.3/jquery.addajet.search.min.css'); 
+        
+        .searchBoxContainer {
+            .searchBoxInnerContainer { 
+                #dateFromContainer1,#dateToContainer1,.groupContainerInner,.groupChildAgeContainer,.codeContainer {
+                    width:100%;
+                    margin-right:0;
+                }
+            }
+            label {
+                line-height:2em;
+            }
+            input[type=text], input[type=password], textarea, select {
+                position: relative;
+                padding: 4px 10px;
+                height: 50px;
+                color: $black;
+                font-size: 1.1em;
+                line-height: 1.1em;
+                text-align: left;
+            }
+            .codeLinksContainer a {
+                @extend .btn;
+                background:$grey;
+                color:$white;
+                margin: 6px 3px;
+                &:hover {
+                    background:$black;
+                    color:$white;
+                }
+            }
+            button {
+                @extend .btn-primary;
+                background-image: none;
+            }
+        }
+        &.pt-5 {
+            .ui-datepicker {
+                position: absolute !important;
+                -webkit-transform: translate(0, 115%);
+                transform: translate(0, 115%);
+            }
+        }
+    }
+}
+/* Firefox bugs fix */
+body.moz {
+    @media (min-width: 1200px) {
+        .addajet-booking-bar {
+            .searchBoxContainer {
+                max-width: 1400px;
+                #datesContainer1 {
+                    -moz-box-flex: 0;
+                    max-width: 475px;
+                    overflow: hidden;
+                }
+            }                
+        }
+    }
+}

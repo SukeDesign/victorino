@@ -1,0 +1,311 @@
+{% extends "layout.html" %}
+{% block pagetitle %} Conference Room details {% endblock %}
+{% block swipper %} 
+    <!-- swipper with images and captions -->
+    <section data-handler="free-block" data-method="swipper">
+        {% for conferenceroom in conferencerooms %}
+            {% if loop.first %}
+                    <figure>
+                        <picture>
+                            {%if conferenceroom.hero %}
+                                <img src="{{ imagepath }}/{{ conferenceroom.hero }}_1500x630.jpg" alt="{{ conferenceroom.title }}">
+                            {% else %}
+                                <img src="{{ imagepath }}/1500x630.jpg" alt="{{ conferenceroom.title }}">
+                            {% endif %}
+                        </picture>
+                        <figcaption>
+                            <p class="h5">
+                                {{ hotelname }} Conference Rooms                                            
+                            </p>
+                            <h1>{{ conferenceroom.title }}</h1>
+                        </figcaption>
+                    </figure>
+            {% endif %}
+        {% endfor %}
+        {% include "addajet.html" %}
+    </section>
+{% endblock %}
+{% block content %}
+    {% for conferenceroom in conferencerooms %}
+        {% if loop.first %}
+        <article data-handler="conferenceroom" data-method="details">
+            <div class="row">
+                <!-- left | title + price + text + buttons + facilities + images -->
+                <div class="col-12 col-md-8">
+                    <!-- left | title + price + text + buttons + facilities + images -->
+                    <div data-step="description">
+                        <p class="h5">{{ conferenceroom.size }} m²</p>
+                        <h2>{{ conferenceroom.title }}</h2>
+                        <p>
+                            {{ conferenceroom.text }}
+                        </p>
+                    </div>
+                    <div data-step="buttons">
+                        <a class="btn-details btn-border" data-toggle="modal" data-target="#conference-request">
+                            <i class="icon-website-chart"></i>
+                            <span data-hover="infos"> 
+                                Request  
+                            </span>
+                        </a>
+                        <a href="https://media.busyrooms.co/images/icomoon.zip" class="btn-details btn-border" target="_blank">
+                            <i class="icon-website-file"></i>
+                            <span data-hover="PDF [456kb]"> 
+                                Download  
+                            </span>
+                        </a>
+                    </div>
+                    <!-- facilities -->
+                    <div data-step="list">
+                        <h5>Conference Technique</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="icon-website-check"></i>
+                                Daylight
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                wheelchair accessible
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                air condition
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                telephone connection 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                TV remote control
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                toilet 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                terrasse / balcony 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                video conference possible 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                SAT TV 
+                            </li>
+                            <li>
+                                <i class="icon-website-check"></i>
+                                WIFI
+                            </li>                            
+                        </ul>
+                    </div>
+                    <div data-step="seats">
+                        <div class="card">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th colspan="5">Seating possibilities</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td width="5%" class="d-none d-sm-table-cell">
+                                        <i class="icon-seat-ushape" title="U-Shape"></i>
+                                        </td>
+                                        <td>U-Shape</td>
+                                        <td align="right">50</td>
+                                        <td align="left">Seats</td>
+                                        <td class="d-none d-sm-table-cell">
+                                        <a href="{{ imagepath }}/sketch-1.jpg" data-title="U-Shape" data-gallery="seatings" data-max-width="600" data-toggle="lightbox">
+                                        Preview
+                                        </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%" class="d-none d-sm-table-cell">
+                                        <i class="icon-seat-ushapein" title="U-Shape-Inside"></i>
+                                        </td>
+                                        <td>U-Shape inside</td>
+                                        <td align="right">0</td>
+                                        <td align="left">Seats</td>
+                                        <td class="d-none d-sm-table-cell">
+                                        n.a.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%" class="d-none d-sm-table-cell">
+                                        <i class="icon-seat-tshape" title="T-Shape"></i>
+                                        </td>
+                                        <td>T-Shape</td>
+                                        <td align="right">34</td>
+                                        <td align="left">Seats</td>
+                                        <td class="d-none d-sm-table-cell">
+                                        <a href="{{ imagepath }}/sketch-3.jpg" data-title="T-Shape" data-gallery="seatings" data-max-width="600" data-toggle="lightbox">
+                                        Preview
+                                        </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%" class="d-none d-sm-table-cell">
+                                        <i class="icon-seat-block" title="Block"></i>
+                                        </td>
+                                        <td>Block</td>
+                                        <td align="right">30</td>
+                                        <td align="left">Seats</td>
+                                        <td class="d-none d-sm-table-cell">
+                                        <a href="{{ imagepath }}/sketch-4.jpg" data-title="Block" data-gallery="seatings" data-max-width="600" data-toggle="lightbox">
+                                        Preview
+                                        </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%" class="d-none d-sm-table-cell">
+                                        <i class="icon-seat-parliamentary" title="Parliamentary (with tables)"></i>
+                                        </td>
+                                        <td>Parliamentary (with tables)</td>
+                                        <td align="right">0</td>
+                                        <td align="left">Seats</td>
+                                        <td class="d-none d-sm-table-cell">
+                                        n.a.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%" class="d-none d-sm-table-cell">
+                                        <i class="icon-seat-cinema" title="Cinema"></i>
+                                        </td>
+                                        <td>Cinema</td>
+                                        <td align="right">160</td>
+                                        <td align="left">Seats</td>
+                                        <td class="d-none d-sm-table-cell">
+                                        n.a.
+                                        </td>
+                                    </tr>                     
+                                    <tr>
+                                        <td width="5%" class="d-none d-sm-table-cell">
+                                        <i class="icon-seat-circle" title="Chair circle"></i>
+                                        </td>
+                                        <td>Chair circle</td>
+                                        <td align="right">100</td>
+                                        <td align="left">Seats</td>
+                                        <td class="d-none d-sm-table-cell">
+                                        <a href="{{ imagepath }}/sketch-2.jpg" data-title="Chair circle" data-gallery="seatings" data-max-width="600" data-toggle="lightbox">
+                                        Preview
+                                        </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%" class="d-none d-sm-table-cell">
+                                        <i class="icon-seat-banquet" title="Banquet"></i>
+                                        </td>
+                                        <td>Banquet</td>
+                                        <td align="right">0</td>
+                                        <td align="left">Seats</td>
+                                        <td class="d-none d-sm-table-cell">
+                                        n.a.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%" class="d-none d-sm-table-cell">
+                                        <i class="icon-seat-ball" title="Ball"></i>
+                                        </td>
+                                        <td>Ball</td>
+                                        <td align="right">58</td>
+                                        <td align="left">Seats</td>
+                                        <td class="d-none d-sm-table-cell">
+                                        n.a.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="5%" class="d-none d-sm-table-cell">
+                                        <i class="icon-seat-reception" title="Reception"></i>
+                                        </td>
+                                        <td>Reception</td>
+                                        <td align="right">200</td>
+                                        <td align="left">Seats</td>
+                                        <td class="d-none d-sm-table-cell">
+                                        <a href="{{ imagepath }}/sketch-2.jpg" data-title="Reception" data-gallery="seatings" data-max-width="600" data-toggle="lightbox">
+                                        Preview
+                                        </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div data-step="extras">
+                        <h5>Extras</h5>
+                        {% include "extras.html" %}
+                    </div>
+                </div>
+                <!-- right | characteristics and images -->
+                <div class="col-12 col-md-4">
+                    <div data-step="tables">
+                        <div class="card"> 
+                            <!-- Characteristics -->
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Characteristics</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="">Level:</th>
+                                        <td>Ground floor</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="">Room size:</th>
+                                        <td>150,00 qm (7,00 m x 23,00 m x 3,00 m)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="">Door:</th>
+                                        <td>1,00 m x 2,80 m</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="">Pillars:</th>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="">Stage:</th>
+                                        <td>1,42 qm (1,19 m x 1,19 m x 1,80 m)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="">Lift:</th>
+                                        <td>1,42 qm (1,19 m x 1,19 m x 2,10 m)</td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div>
+                    </div>
+                    <!-- gallery | if more then 3 please use carousel (see restaurant-details) -->
+                    <div data-step="gallery">
+                        <div class="card">
+                            <img src="{{ imagepath }}/conferenceroom-4_414x414.jpg" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="{{ imagepath }}/conferenceroom-8_414x414.jpg" alt="">
+                        </div>         
+                        <div class="card">
+                            <img src="{{ imagepath }}/conferenceroom-11_414x414.jpg" alt="">
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="modal" id="conferenceroom-request">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Request informations about {{ conferenceroom.title }}</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        {% include "contact-form.html" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

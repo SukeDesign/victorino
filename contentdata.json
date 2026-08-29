@@ -1,0 +1,1714 @@
+{
+    "themename":"victorino",
+    "hotelname":"Hotel Victorino de Almeida",
+    "imagepath": "assets/images/dyn",
+    "csspath": "assets/css",
+    "jspath": "assets/js",
+    "bookinglink": "https://hotelemea1.direct-reservation.net/en/accommodation",
+    "hotelphone": "+123 (0)971 78548-0",
+    "hotelemail": "info@victorino.com",
+    "hotelstreet": "Lorem Ipsum Street no. 123",
+    "hotelcity": "Lorem Ipsum City",
+    "hotelcountry": "Malta",
+    "currency": "€",
+    "intro": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero.",
+    "teasers": [
+        {
+            "link":"free-blocks.html",
+            "image":"hotel-18",
+            "hero":"hotel-18",
+            "title": "Headline teaser 1",
+            "badge": "Headline teaser 1",
+            "text": "Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis."
+        },
+        {
+            "link":"free-blocks.html",
+            "image":"hotel-20",
+            "hero":"hotel-20",
+            "title": "Headline teaser 2 it's a little bit longer so we can test",
+            "text": "In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis."
+        },
+        {
+            "link":"free-blocks.html",
+            "image":"hotel-37",
+            "hero":"hotel-37",
+            "title": "Headline teaser 3",
+            "text": "Duis autem vel eum iriure dolor in <strong>hendrerit in vulputate velit esse molestie</strong> consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis."
+        },
+        {
+            "link":"free-blocks.html",
+            "image":"hotel-14",
+            "hero":"hotel-14",
+            "title": "Headline teaser 4",
+            "text": "Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis."
+        },
+        {
+            "link":"free-blocks.html",
+            "image":"hotel-5",
+            "hero":"hotel-5",
+            "title": "Headline teaser 5",
+            "text": "Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis."
+        },
+        {
+            "link":"free-blocks.html",
+            "image":"hotel-6",
+            "hero":"hotel-6",
+            "title": "Headline teaser 6",
+            "text": "Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis."
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid?",
+            "answer": "Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident you probably haven't heard of them accusamus labore sustainable. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt VHS"
+        },
+        {
+            "question": "Food truck quinoa nesciunt laborum eiusmod?",
+            "answer": "In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis."
+        },
+        {
+            "question": "A bird on it squid single-origin coffee nulla assumenda shoreditch et?",
+            "answer": "Duis autem vel eum iriure dolor in <strong>hendrerit in vulputate velit esse molestie</strong> consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis."
+        }
+    ],
+    "services": [
+        {
+            "icon":"building",
+            "title":""
+        },
+        {
+            "icon":"church",
+            "title":"Religion & Culture"
+        },
+        {
+            "icon":"amusement-park",
+            "title":""
+        },
+        {
+            "icon":"history",
+            "title":"History & Culture"
+        },
+        {
+            "icon":"train",
+            "title":"Train station"
+        },
+        {
+            "icon":"hotel",
+            "title":""
+        },
+        {
+            "icon":"satelite",
+            "title":""
+        },
+        {
+            "icon":"outdoors",
+            "title":"Outdoor area"
+        },
+        {
+            "icon":"to-go-drink",
+            "title":"To-Go lunch & drinks"
+        },
+        {
+            "icon":"lift",
+            "title":"Lift"
+        },
+        {
+            "icon":"wheelchair",
+            "title":"Wheelchair friendly"
+        },
+        {
+            "icon":"room-service",
+            "title":"Room service 24/7"
+        },
+        {
+            "icon":"ice-bucket",
+            "title":""
+        },
+        {
+            "icon":"chat",
+            "title":""
+        },
+        {
+            "icon":"paper-pen",
+            "title":""
+        },
+        {
+            "icon":"martiny-glass",
+            "title":"Bar"
+        },
+        {
+            "icon":"taxi",
+            "title":""
+        },
+        {
+            "icon":"dog",
+            "title":"Pets allowed"
+        },
+        {
+            "icon":"skyscrapper",
+            "title":""
+        },
+        {
+            "icon":"trees",
+            "title":"Garden"
+        },
+        {
+            "icon":"subway",
+            "title":""
+        },
+        {
+            "icon":"bus",
+            "title":"Bus station nearby"
+        },
+        {
+            "icon":"parking",
+            "title":"Free parking"
+        },
+        {
+            "icon":"cable-car",
+            "title":""
+        },
+        {
+            "icon":"backpacker",
+            "title":""
+        },
+        {
+            "icon":"walking-tours",
+            "title":"Tours"
+        },
+        {
+            "icon":"video-camera",
+            "title":""
+        },
+        {
+            "icon":"photos",
+            "title":""
+        },
+        {
+            "icon":"suitcase",
+            "title":""
+        },
+        {
+            "icon":"photo-camera",
+            "title":""
+        },
+        {
+            "icon":"credit-cards",
+            "title":"Creditcards accepted"
+        },
+        {
+            "icon":"currency",
+            "title":""
+        },
+        {
+            "icon":"map",
+            "title":""
+        },
+        {
+            "icon":"compass",
+            "title":""
+        },
+        {
+            "icon":"golf",
+            "title":"Golf course"
+        },
+        {
+            "icon":"bike-rental",
+            "title":"Bike rental"
+        },
+        {
+            "icon":"location",
+            "title":""
+        },
+        {
+            "icon":"search",
+            "title":""
+        },
+        {
+            "icon":"small-church",
+            "title":""
+        },
+        {
+            "icon":"points-of-interest",
+            "title":""
+        },
+        {
+            "icon":"no-photos",
+            "title":""
+        },
+        {
+            "icon":"eye",
+            "title":""
+        },
+        {
+            "icon":"non-smoking",
+            "title":"Non Smoking areas"
+        },
+        {
+            "icon":"sign",
+            "title":""
+        },
+        {
+            "icon":"store",
+            "title":"Souvenirs"
+        },
+        {
+            "icon":"bag",
+            "title":""
+        },
+        {
+            "icon":"label",
+            "title":""
+        },
+        {
+            "icon":"clock",
+            "title":""
+        },
+        {
+            "icon":"calendar",
+            "title":""
+        },
+        {
+            "icon":"information",
+            "title":""
+        },
+        {
+            "icon":"call",
+            "title":""
+        },
+        {
+            "icon":"chat-buble",
+            "title":""
+        },
+        {
+            "icon":"support",
+            "title":""
+        },
+        {
+            "icon":"gastronomy",
+            "title":"Restaurant"
+        },
+        {
+            "icon":"coffee",
+            "title":"Café"
+        },
+        {
+            "icon":"cocktail-glas",
+            "title":"Cocktail Bar"
+        },
+        {
+            "icon":"flag",
+            "title":""
+        },
+        {
+            "icon":"mobile",
+            "title":""
+        },
+        {
+            "icon":"mobile-pointer",
+            "title":"Mobile app"
+        },
+        {
+            "icon":"home",
+            "title":""
+        },
+        {
+            "icon":"user",
+            "title":""
+        },
+        {
+            "icon":"lock",
+            "title":"Safes in room"
+        },
+        {
+            "icon":"headset",
+            "title":""
+        },
+        {
+            "icon":"star",
+            "title":""
+        },
+        {
+            "icon":"heart",
+            "title":""
+        },
+        {
+            "icon":"time",
+            "title":""
+        },
+        {
+            "icon":"email",
+            "title":""
+        },
+        {
+            "icon":"chat-bubles",
+            "title":""
+        },
+        {
+            "icon":"wifi",
+            "title":"Free Wifi"
+        },
+        {
+            "icon":"chart",
+            "title":""
+        },
+        {
+            "icon":"share",
+            "title":""
+        },
+        {
+            "icon":"24-hours-line",
+            "title":""
+        },
+        {
+            "icon":"calling",
+            "title":""
+        },
+        {
+            "icon":"phone",
+            "title":""
+        },
+        {
+            "icon":"file",
+            "title":""
+        },
+        {
+            "icon":"book",
+            "title":""
+        },
+        {
+            "icon":"visitcard",
+            "title":""
+        },
+        {
+            "icon":"fax",
+            "title":"Printer"
+        },
+        {
+            "icon":"silence",
+            "title":""
+        },
+        {
+            "icon":"sound",
+            "title":""
+        },
+        {
+            "icon":"microphone",
+            "title":"Business Technic"
+        },
+        {
+            "icon":"micro-out",
+            "title":""
+        },
+        {
+            "icon":"shouting",
+            "title":""
+        }
+    ],
+    "contactpersons": [
+        {
+            "link":"contact-person-details.html",
+            "image":"team-1",
+            "hero":"team-1",
+            "title": "Ms. Laya Lillith Pinho",
+            "position": "Owner / CEO",
+            "email": "manager@victorino.com",
+            "phone": "+49 123 4567-88",
+            "socials": [ "facebook","instagram","googleplus" ],
+            "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Phasellus hendrerit."
+            
+        },
+        {
+            "link":"contact-person-details.html",
+            "image":"team-6",
+            "hero":"team-6",
+            "title": "Chef Mariana Muster",
+            "position": "Gastronomy Chef",
+            "email": "chef@victorino.com",
+            "phone": "+49 123 4567-9",
+            "socials": [ "instagram","twitter" ],
+            "text": "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi."
+        },
+        {
+            "link":"contact-person-details.html",
+            "image":"team-8",
+            "hero":"team-8",
+            "title": "Mr. Victorino de Almeida",
+            "position": "Support / Reception",
+            "email": "alex@victorino.com",
+            "phone": "+49 123 4567-1",
+            "socials": [ "facebook","instagram"],
+            "text": "Pellentesque aliquet nibh nec urna. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh."
+            
+        }
+    ],
+    "rooms": [
+        {
+            "title":"Business Suite",
+            "link":"room-details.html",
+            "image": "room-18",
+            "hero": "room-18",
+            "text" : "The Business Suite offers very comfortable living and place for your important meetings...",
+            "price":"427",
+            "size":"120",
+            "occupancy":"4",
+            "amountrooms":"2",
+            "smokefree":"0",
+            "handicapped":"1",
+            "view":"Garden",
+            "amenities": [ "king-size-bed","tv","buttler","sunlounger","bathtub" ],
+            "services": [ "hairdryer","ironing","coffee-maker","room-service-cart" ]
+        },
+        {
+            "title":"Comfort double room",
+            "link":"room-details.html",
+            "image": "room-2",
+            "hero": "room-2",
+            "text" : "Large and comfortable double rooms for a romantic get away...",
+            "price":"210",
+            "size":"45",
+            "occupancy":"3",
+            "amountrooms":"8",
+            "smokefree":"8",
+            "handicapped":"1",
+            "view":"See",
+            "amenities": [ "twin-beds","tv","shower","extra-bed" ],
+            "services": [ "towels","hairdryer","toilette-products" ]   
+        },
+        {
+            "title":"Simple double room",
+            "link":"room-details.html",
+            "image": "room-77",
+            "hero": "room-77",
+            "text" : "Make room for friends, with two single beds for a weekend full of fun...",
+            "price":"95",
+            "size":"38",
+            "occupancy":"3",
+            "amountrooms":"14",
+            "smokefree":"14",
+            "handicapped":"0",
+            "view":"Garden",
+            "amenities": [ "twin-beds","tv","shower","extra-bed" ],
+            "services": [ "ironing","hairdryer"]     
+        },
+        {
+            "title":"Honeymoon Suite",
+            "link":"room-details.html",
+            "image": "room-1",
+            "hero": "room-1",
+            "text" : "Five star luxury, romantic and fine details awaits...",
+            "price":"1260",
+            "size":"55",
+            "occupancy":"5",
+            "amountrooms":"1",
+            "smokefree":"1",
+            "handicapped":"1",
+            "view":"See",
+            "amenities": [ "king-size-bed","tv","hanger","bathtub" ],
+            "services": [ "hairdryer","fitness-center","room-service-cart","bottle-champagne","toilette-products","slippers" ]         
+        },
+        {
+            "title":"President Suite",
+            "link":"room-details.html",
+            "image": "room-51",
+            "hero": "room-51",
+            "text" : "Five star luxury, romantic and fine details awaits...",
+            "price":"980",
+            "size":"55",
+            "occupancy":"5",
+            "amountrooms":"1",
+            "smokefree":"1",
+            "handicapped":"1",
+            "view":"Garden" ,
+            "amenities": [ "king-size-bed","tv","radio","buttler" ],
+            "services": [ "hairdryer","toilette-products","slippers","room-service-cart" ]                
+        },
+        {
+            "title":"Apartment Suite",
+            "link":"room-details.html",
+            "image": "room-20",
+            "hero": "room-20",
+            "text" : "Five star luxury, romantic and fine details awaits...",
+            "price":"1130",
+            "size":"55",
+            "occupancy":"6",
+            "amountrooms":"4",
+            "smokefree":"3",
+            "handicapped":"",
+            "view":"Pool",
+            "amenities": [ "king-size-bed","tv","baggage-cart" ],
+            "services": [ "washing-maschine","coffee-maker","toilette-products","hairdryer","room-service-cart" ]            
+        }
+    ],
+    "restaurants": [
+        {
+            "title":"Restaurant Victorino de Almeida",
+            "link":"restaurant-details.html",
+            "image": "gastronomy-1",
+            "hero": "gastronomy-25",
+            "text" : "Treasures from the sea and soil are prepared carefully and freshly in unforgettable culinary experiences...",
+            "seats":"35",
+            "tables":"12",
+            "payment":"Visa, American Express, Mastercard",
+            "facilities": [ "restaurant","bottle-cooler","bottle","security","fire-detector","credit-card" ]
+        },
+        {
+            "title":"Keep it Green",
+            "link":"restaurant-details.html",
+            "image": "gastronomy-71",
+            "hero": "gastronomy-84",
+            "text" : "Suitable for vegetarians, vegan options, gluten-free options...",
+            "seats":"55",
+            "tables":"12",
+            "payment":"Visa, American Express, Mastercard",
+            "facilities": [ "restaurant","bottle","patio-relax","menu-card","no-smoking","wifi" ]
+        },
+        {
+            "title":"Bodega Bar",
+            "link":"restaurant-details.html",
+            "image": "gastronomy-75",
+            "hero": "gastronomy-75",
+            "text" : "Exceptional selection of wines and cocktails. You can choose to seat outside and enjoy the pool with a Margarita in your hand.",
+            "seats":"124",
+            "tables":"24",
+            "payment":"Visa, EC",
+            "facilities": [ "bottle","bottle-cooler","cocktail","luggage","credit-card" ]
+        },
+        {
+            "title":"Café Lisboa",
+            "link":"restaurant-details.html",
+            "image": "gastronomy-67",
+            "hero": "gastronomy-67",
+            "text" : "The portugese way of life: good coffee and even better patisserie, from creamy Pastel de Nata to fresh Chantilly Duchesse.",
+            "seats":"21",
+            "tables":"6",
+            "payment":"Visa, Mastercard",
+            "facilities": [ "coffee","breakfast","cocktail","patio-relax","room-service-cart" ]
+        },
+        {
+            "title":"Lounge & Terrace",
+            "link":"restaurant-details.html",
+            "image": "gastronomy-73",
+            "hero": "gastronomy-70",
+            "text" : "Exceptional selection of wines and cocktails by the pool. You can choose to seat outside and enjoy the pool with a Margarita in your hand.",
+            "seats":"231",
+            "tables":"34",
+            "payment":"Visa, EC, Mastercard",
+            "facilities": [ "bottle","bottle-cooler","cocktail","patio-relax","swimming-pool" ]
+        },
+        {
+            "title":"Restaurant Lorem Ipsum 1",
+            "link":"restaurant-details.html",
+            "image": "gastronomy-62",
+            "hero": "gastronomy-63",
+            "text" : "Exceptional selection of wines and cocktails. You can choose to seat outside and enjoy the pool with a Margarita in your hand.",
+            "seats":"65",
+            "tables":"34",
+            "payment":"Visa, EC, Mastercard",
+            "facilities": [ "restaurant","bottle-cooler","bottle","security","fire-detector","credit-card" ]
+        },
+        {
+            "title":"Restaurant Lorem Ipsum 2",
+            "link":"restaurant-details.html",
+            "image": "gastronomy-83",
+            "hero": "gastronomy-84",
+            "text" : "Exceptional selection of wines and cocktails. You can choose to seat outside and enjoy the pool with a Margarita in your hand.",
+            "seats":"75",
+            "tables":"34",
+            "payment":"Visa, EC, Mastercard",
+            "facilities": [ "restaurant","bottle-cooler","bottle","security","fire-detector","credit-card" ]
+        }
+    ],
+    "conferencerooms" : [
+        {
+            "title":"Meeting room Victorino de Almeida",
+            "link":"conference-room-details.html",
+            "hero": "conferenceroom-1",
+            "image":"conferenceroom-9",
+            "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+            "floor":"1",
+            "size":"140",
+            "height":"3",
+            "facilities": [ "lift","wheelchair","coffee","room-service","phone","microphone" ],
+            "seatinglist": [ 44,20,16,0,36,55,47,17,0,0 ]           
+        },
+        {
+            "title":"Meeting room with terrace",
+            "link":"conference-room-details.html",
+            "hero": "conferenceroom-7",
+            "image":"conferenceroom-6",
+            "text":"We always pay attention to the finer details. In this conference room you have all the comfort you need for a long meeting...",
+            "floor":"2",
+            "size":"73",
+            "height":"3,5",
+            "facilities": [ "skyscrapper","chat-bubles","coffee","paper-pen","phone","microphone" ],
+            "seatinglist": [ 0,0,64,50,30,0,40,25,36,96 ]            
+        } ,
+        {
+            "title":"Meeting room Classic",
+            "link":"conference-room-details.html",
+            "hero": "conferenceroom-4",
+            "image":"conferenceroom-5",
+            "text":"Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.At vero eos et accusam et justo duo dolores et ea rebum.",
+            "floor":"1",
+            "size":"140",
+            "height":"2,80",
+            "facilities": [ "chat","satelite","coffee","room-service","phone","microphone" ],
+            "seatinglist": [ 50,0,34,30,0,160,100,0,58,200 ]    
+        } ,
+        {
+            "title":"Small business room",
+            "link":"conference-room-details.html",
+            "hero": "conferenceroom-11",
+            "image":"conferenceroom-3",
+            "text":"Takimata sanctus est Lorem ipsum dolor sit amet.At vero eos et accusam et justo duo dolores et ea rebum.",
+            "floor":"0",
+            "size":"56",
+            "height":"2,80",
+            "facilities": [ "parking","video-camera","walking-tours","chart","phone","fax" ],
+            "seatinglist": [ 12,0,4,0,0,20,0,0,16,24 ]    
+        }   
+    ],
+    "events": [
+        {
+            "title":"Skate sport event",
+            "link":"event-details.html",
+            "hero": "event-1",
+            "image": "event-2",
+            "text" : "Each year there are a great number of skate sport events in and around our Hotel and this year is no exception. With the Victorino de Almeida Sports hosting some of the most iconic downhill skiing competitions, you can be sure to catch a glimpse of the best skiers from around the world this season. However, you may be interested to know that the Victorino de Almeida Sports celebrates a whole assortment of other winter sports too. From husky racing to winter golf, you will be sure to see some great events across the 19/20 ski season! Read on to find out about some of our top picks...",
+            "day":"31",            
+            "month":"Mar",            
+            "location": [
+                { "title":"Lorem Ipsum sky run", "link":"location-details.html" }
+            ]  
+        },
+        {
+            "title":"Surf training",
+            "link":"event-details.html",
+            "hero": "event-9",
+            "image": "event-12",
+            "text" : "Surf is a sport about constant improvement. The fun and the challenge of this beautiful sport is that you can always become better, always shave off a few strokes, always swing with more accuracy. If you are committed to improving your golf game, there are a plethora of golf training aids available for your use...",
+            "day":"22",            
+            "month":"Jun",            
+            "location": [
+                {
+                   "title": "Grand Hotel Victorino de Almeida" ,    
+                   "link": "location-details.html"  
+                }
+            ]             
+        },
+        {
+            "title":"Bike tours",
+            "link":"event-details.html",
+            "hero": "event-6",
+            "image": "event-17",
+            "text" : "The Grand Hotel Victorino de Almeida is hosting a Summer of Sport & Culture, welcoming you to drive and dine while picking up a new skill. From painting like Mucnh to trying your hand at tenegui, these unique events across the city are sure to inspire. ",
+            "day":"16",            
+            "month":"Aug",            
+            "location": [
+                {
+                   "title": "Restaurant Victorino de Almeida" ,    
+                   "link": "location-details.html"  
+                }
+            ]                
+        },
+        {
+            "title":"Extrem Yoga",
+            "link":"event-details.html",
+            "hero": "event-35",
+            "image": "event-30",
+            "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim...",
+            "day":"04",            
+            "month":"Oct",            
+            "location": [
+                {
+                   "title": "Grand Hotel Victorino de Almeida" ,    
+                   "link": "location-details.html"  
+                }
+            ]               
+        },
+        {
+            "title":"Family fun",
+            "link":"event-details.html",
+            "hero": "event-50",
+            "image": "event-20",
+            "text" : "For a Sunday roast with a difference, Swinging Jazz Lunch offers one of the best food and music events. Enjoy an 18-hour slow roast rib of beef while you tap your toes along to the very finest in classic jazz...",
+            "day":"09",            
+            "month":"Nov",            
+            "location": [
+                {
+                   "title": "Grand Hotel Victorino de Almeida" ,    
+                   "link": "location-details.html"  
+                }
+            ]               
+        }
+    ],
+    "locations": [
+        { 
+            "title":"Lorem Ipsum sky run", 
+            "text" : "Each year there are a great number of winter sport events in and around our Hotel and this year is no exception. With the Victorino de Almeida Sports hosting some of the most iconic downhill skiing competitions, you can be sure to catch a glimpse of the best skiers from around the world this season. However, you may be interested to know that the Victorino de Almeida Sports celebrates a whole assortment of other winter sports too. From husky racing to winter golf, you will be sure to see some great events across the 19/20 ski season! Read on to find out about some of our top picks...",
+            "link":"location-details.html",
+            "city": "Lorem City, Malta",
+            "phone":"+49 123 456 78 9",
+            "email":"tickets@hotel-victorino.com",
+            "hero": "hotel-2",
+            "image": "hotel-2"
+        },
+        {
+            "title": "Grand Hotel Victorino de Almeida" , 
+            "text" : "Golf is a sport about constant improvement. The fun and the challenge of this beautiful game is that you can always become better, always shave off a few strokes, always swing with more accuracy. If you are committed to improving your golf game, there are a plethora of golf training aids available for your use...",   
+            "link": "location-details.html", 
+            "city": "Lorem Ipsum City, Malta",
+            "phone":"+49 123 456 78 1",
+            "email":"reception@hotel-victorino.com",
+            "hero": "hotel-3",
+            "image": "hotel-4"
+        },
+        {
+            "title": "Restaurant Victorino" , 
+            "text" : "The Grand Hotel Victorino de Almeida is hosting a Summer of Culture, welcoming you to drink and dine while picking up a new skill. From painting like Mucnh to trying your hand at tenegui, these unique events across the city are sure to inspire. ",   
+            "link": "location-details.html" , 
+            "city": "Gotthelffriedrichsgrund, Malta",
+            "phone":"+49 123 456 78 3",
+            "email":"restaurant@hotel-victorino.com",
+            "hero": "gastronomy-51",
+            "image": "gastronomy-52"
+        }
+    ] , 
+    "offers": [
+        {   
+            "hero": "offer-1",
+            "image": "offer-10",
+            "category":["sport","wellness","enjoy"],
+            "title":"Sommer sports & wellness",
+            "link":"offer-details.html",
+            "text" : "Each year there are a great number of winter sport events in and around our Hotel and this year is no exception. With the Victorino de Almeida Sports hosting some of the most iconic downhill skiing competitions, you can be sure to catch a glimpse of the best skiers from around the world this season. However, you may be interested to know that the Victorino de Almeida Sports celebrates a whole assortment of other winter sports too. ",
+            "nights":"3",            
+            "price":"1340",
+            "facilities": [ "king-size-bed","tv","buttler","sunlounger","bathtub" ]
+        },
+        {
+            "hero": "offer-6",
+            "image": "offer-16",
+            "category":["health","wellness"],
+            "title":"My time",
+            "link":"offer-details.html",
+            "text" : "At Classic Resorts, we bring together the best of two worlds: the prime locations and fine amenities of a resort hotel combined with the spaciousness and luxury comforts of a private residence. ",
+            "nights":"2",            
+            "price":"1045",
+            "facilities": [ "twin-beds","extra-bed","swimming","gym" ]
+        },
+        {
+            "hero": "event-40",
+            "image": "offer-13",
+            "category":["sport","wellness","family","enjoy"],
+            "title":"Time for friends",
+            "link":"offer-details.html",
+            "text" : "Our spacious 500 sqm wellness area offers a pool, a sauna and a steam bathtub. Unwind after a long day filled with business meetings or visits to Stuttgart's museums in the stylish Zen furnishings of the day spa, or reinvigorate yourself in the fitness gym. External guests are also invited to let themselves be pampered with one of our beauty treatments or massages.",
+            "nights":"3",            
+            "price":"85",
+            "facilities": [ "king-size-bed","tv","buttler","sunlounger","bathtub" ]
+        },
+        {
+            "hero": "event-20",
+            "image": "event-20",
+            "category":["enjoy","family"],
+            "title":"Family time",
+            "link":"offer-details.html",
+            "text" : "At vero eos et accusam et justo duo dolores et ea rebum. ",
+            "nights":"3",            
+            "price":"940",
+            "facilities": [ "baggage-cart","hanger","shower","swimming" ]
+        },
+        {
+            "hero": "event-4",
+            "image": "event-14",
+            "category":["enjoy","family"],
+            "title":"Fun for everyone",
+            "link":"offer-details.html",
+            "text" : "At vero eos et accusam et justo duo dolores et ea rebum. ",
+            "nights":"1",            
+            "price":"462",
+            "facilities": [ "twin-beds","radio","buttler","sunlounger","gym" ]
+        },
+        {
+            "hero": "offer-7",
+            "image": "offer-17",
+            "category":["health","wellness","enjoy"],
+            "title":"Relax week",
+            "link":"offer-details.html",
+            "text" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. ",
+            "nights":"6",            
+            "price":"940",
+            "facilities": [ "king-size-bed","tv","hanger","swimmingpool","gym" ]
+        },
+        {
+            "hero": "offer-2",
+            "image": "offer-7",
+            "category":["health","enjoy"],
+            "title":"Wellness for two",
+            "link":"offer-details.html",
+            "text" : "The Wellness for two offer is an oasis of rest and relaxation high above the roofs of Grandhotel Victorino de Almeida. ",
+            "nights":"2",            
+            "price":"840",
+            "facilities": [ "twin-beds","radio","buttler","sunlounger","gym" ]
+        },
+        {
+            "hero": "offer-8",
+            "image": "offer-11",
+            "category":["health","sport"],
+            "title":"Fat burner special",
+            "link":"offer-details.html",
+            "text" : "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "nights":"4",            
+            "price":"2720",
+            "facilities": [ "king-size-bed","sunlounger","bathtub","swimmingpool","tv" ]
+        }
+    ],
+    "testimonials" : [
+        {            
+        "text":"I love it! The charm of the location, passion of the nature and territory, a unique mixture where you can live some moment of absolutely relax surrounded by sounds and fragrances of our marvelous land.",
+        "author":"Mariana Muster (Melbourne)"
+        },
+        {            
+        "text":"Comfortable & spacious apartmen. Choosing a hotel is always challenging, especially if you’re on a hectic schedule and are visiting the place for the first time. That’s why I was so happy that my guess with this hotel was definitely a lucky one.",
+        "author":"Max Muster (Lorem Ipsum City)"
+        },
+        {            
+        "text":"Nice and quiet location. We are visiting the place for the first time. That’s why I was so happy that my guess with this hotel was definitely a lucky one.",
+        "author":"Robert Redford"
+        },
+        {            
+        "text":"Great Restaurant, friendly Bar! I’ve been visiting Essen last year while touring across the Midwest with my family. The Family room is just great, the hotel’s restaurant (and bar) are nice and overall, even the price was very reasonable…",
+        "author":"Paulo Coelho"
+        }
+    ],
+    "extras" : [
+        {
+            "hero": "event-49",
+            "image":"event-49",
+            "title":"Beautiful lake view",
+            "text":"Charm of the location, passion of the nature and territory, a unique mixture where you can live some moment of absolutely relax surrounded by sounds and fragrances of our marvelous land.",
+            "price":"75",
+            "unit":"per stay",
+            "period":"01.04 - 15.09.2023"
+        },
+        {
+            "hero": "gastronomy-49",
+            "image":"gastronomy-33",
+            "title":"Breakfast Buffet",
+            "text":"Enjoy a large and long breakfast, with scrambled eggs, bacon and small fried sausages up to and including food prepared to the guest's taste, e.g. fried eggs. Coffee, tea and fresh juice as a great selection of cereals and saisonal fruits",
+            "price":"36",
+            "unit":"per person per day",
+            "period":"01.01 - 20.12.2023"
+        },
+        {
+            "hero": "event-17",
+            "image":"event-17",
+            "title":"Bike tour",
+            "text":"Be enchanted by the marvellous landscapes that can be discovered by cycling in our hinterland, between paths and paths with breathtaking views.",
+            "price":"82",
+            "unit":"per unit",
+            "period":"01.03 - 31.10.2023"
+        },
+        {
+            "hero": "offer-4",
+            "image":"offer-5",
+            "title":"Spa & Sauna",
+            "text":"Enjoy our relaxing sauna landscape, inside and outside pool, as a fully modern spa and massage center with the greatest wellness team.",
+            "price":"44",
+            "unit":"per stay",
+            "period":"01.01 - 31.12.2023"
+        },
+        {
+            "hero": "event-45",
+            "image":"event-45",
+            "title":"Kayak touring",
+            "text":"Enjoy our lake landscape, at vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ",
+            "price":"110",
+            "unit":"per person",
+            "period":"01.01 - 31.12.2023"
+        },
+        {
+            "hero": "offer-15",
+            "image":"offer-15",
+            "title":"Climbing",
+            "text":"Enjoy our mountain landscape, at vero eos et accusam et justo duo dolores et ea rebum. ",
+            "price":"150",
+            "unit":"per person",
+            "period":"01.01 - 31.12.2023"
+        }
+    ],
+    "extrascategories" : [
+        {
+            "number": 1,
+            "title":"Spa & Beauty"
+        },
+        {
+            "number": 2,
+            "title":"Sport & Fitness"
+        },
+        {
+            "number": 3,
+            "title":"Food & Beverage"
+        }
+    ],
+    "iconsrooms" : [
+        {
+            "name":"baggage-cart"
+        },
+        {
+            "name":"hanger"
+        },
+        {
+            "name":"king-size-bed"
+        },
+        {
+            "name":"buttler"
+        },
+        {
+            "name":"radio"
+        },
+        {
+            "name":"reception"
+        },
+        {
+            "name":"sunlounger"
+        },
+        {
+            "name":"swimmingpool"
+        },
+        {
+            "name":"swimming"
+        },
+        {
+            "name":"bathtub"
+        },
+        {
+            "name":"extra-bed"
+        },
+        {
+            "name":"twin-beds"
+        },
+        {
+            "name":"bunker-beds"
+        },
+        {
+            "name":"tv"
+        },
+        {
+            "name":"gym"
+        },
+        {
+            "name":"shower"
+        }
+    ],
+    "iconshotel" : [
+        {
+            "name":"air-conditioner"
+        },
+        {
+            "name":"hairdryer"
+        },
+        {
+            "name":"airport"
+        },
+        {
+            "name":"suitcase"
+        },
+        {
+            "name":"luggage"
+        },
+        {
+            "name":"bathtub"
+        },
+        {
+            "name":"bottle"
+        },
+        {
+            "name":"bottle-cooler"
+        },
+        {
+            "name":"breakfast"
+        },
+        {
+            "name":"charge"
+        },
+        {
+            "name":"atm"
+        },
+        {
+            "name":"cleaner"
+        },
+        {
+            "name":"cocktail"
+        },
+        {
+            "name":"coffee-maker"
+        },
+        {
+            "name":"coffee"
+        },
+        {
+            "name":"credit-card"
+        },
+        {
+            "name":"wheelchair"
+        },
+        {
+            "name":"elevator"
+        },
+        {
+            "name":"fire-detector"
+        },
+        {
+            "name":"gym"
+        },
+        {
+            "name":"fitness-center"
+        },
+        {
+            "name":"24h"
+        },
+        {
+            "name":"hand-hey"
+        },
+        {
+            "name":"hotel"
+        },
+        {
+            "name":"ironing"
+        },
+        {
+            "name":"key"
+        },
+        {
+            "name":"king-bed"
+        },
+        {
+            "name":"lock-door"
+        },
+        {
+            "name":"lock"
+        },
+        {
+            "name":"laundry"
+        },
+        {
+            "name":"baggage-cart"
+        },
+        {
+            "name":"menu-card"
+        },
+        {
+            "name":"no-smoking"
+        },
+        {
+            "name":"parking"
+        },
+        {
+            "name":"passport"
+        },
+        {
+            "name":"patio-relax"
+        },
+        {
+            "name":"pet"
+        },
+        {
+            "name":"pillow"
+        },
+        {
+            "name":"reception"
+        },
+        {
+            "name":"receptionist"
+        },
+        {
+            "name":"restaurant"
+        },
+        {
+            "name":"room-clean"
+        },
+        {
+            "name":"room-service-cart"
+        },
+        {
+            "name":"room-service"
+        },
+        {
+            "name":"safe-box"
+        },
+        {
+            "name":"security"
+        },
+        {
+            "name":"shower"
+        },
+        {
+            "name":"shuttle"
+        },
+        {
+            "name":"single-bed"
+        },
+        {
+            "name":"slippers"
+        },
+        {
+            "name":"smoke-detector"
+        },
+        {
+            "name":"spa"
+        },
+        {
+            "name":"stairs"
+        },
+        {
+            "name":"swimming-pool"
+        },
+        {
+            "name":"toilette-products"
+        },
+        {
+            "name":"towels"
+        },
+        {
+            "name":"wallet"
+        },
+        {
+            "name":"wardrobe"
+        },
+        {
+            "name":"washing-machine"
+        },
+        {
+            "name":"wifi"
+        }
+    ],
+    "iconswebsite":[
+        {
+            "name":"download"
+        },
+        {
+            "name":"size"
+        },
+        {
+            "name":"seat"
+        },
+        {
+            "name":"child-friendly"
+        },
+        {
+            "name":"child-care"
+        },
+        {
+            "name":"arrow-right"
+        },
+        {
+            "name":"arrow-left"
+        },
+        {
+            "name":"arrow-up"
+        },
+        {
+            "name":"arrow-down"
+        },
+        {
+            "name":"chevron-up"
+        },
+        {
+            "name":"chevron-right"
+        },
+        {
+            "name":"chevron-left"
+        },
+        {
+            "name":"chevron-down"
+        },
+        {
+            "name":"sphere"
+        },
+        {
+            "name":"globe"
+        },
+        {
+            "name":"twitter"
+        },
+        {
+            "name":"facebook"
+        },
+        {
+            "name":"googleplus"
+        },
+        {
+            "name":"video"
+        },
+        {
+            "name":"menu"
+        },
+        {
+            "name":"poi"
+        },
+        {
+            "name":"hotel"
+        },
+        {
+            "name":"outdoors"
+        },
+        {
+            "name":"plus"
+        },
+        {
+            "name":"lift"
+        },
+        {
+            "name":"wheelchair"
+        },
+        {
+            "name":"roomservice"
+        },
+        {
+            "name":"chat"
+        },
+        {
+            "name":"edit"
+        },
+        {
+            "name":"like"
+        },
+        {
+            "name":"dislike"
+        },
+        {
+            "name":"dog"
+        },
+        {
+            "name":"building"
+        },
+        {
+            "name":"trees"
+        },
+        {
+            "name":"train"
+        },
+        {
+            "name":"bus"
+        },
+        {
+            "name":"taxi"
+        },
+        {
+            "name":"parking"
+        },
+        {
+            "name":"images"
+        },
+        {
+            "name":"luggage"
+        },
+        {
+            "name":"photo-camera"
+        },
+        {
+            "name":"credit-cards"
+        },
+        {
+            "name":"currency"
+        },
+        {
+            "name":"map"
+        },
+        {
+            "name":"golf"
+        },
+        {
+            "name":"bike"
+        },
+        {
+            "name":"location"
+        },
+        {
+            "name":"pillars"
+        },
+        {
+            "name":"eye"
+        },
+        {
+            "name":"non-smoking"
+        },
+        {
+            "name":"sign"
+        },
+        {
+            "name":"store"
+        },
+        {
+            "name":"bag"
+        },
+        {
+            "name":"label"
+        },
+        {
+            "name":"time"
+        },
+        {
+            "name":"calendar"
+        },
+        {
+            "name":"info"
+        },
+        {
+            "name":"chat-buble"
+        },
+        {
+            "name":"support"
+        },
+        {
+            "name":"gastronomy"
+        },
+        {
+            "name":"coffee"
+        },
+        {
+            "name":"bar"
+        },
+        {
+            "name":"mobile"
+        },
+        {
+            "name":"home"
+        },
+        {
+            "name":"settings"
+        },
+        {
+            "name":"trash-bin"
+        },
+        {
+            "name":"write"
+        },
+        {
+            "name":"paperclip"
+        },
+        {
+            "name":"user"
+        },
+        {
+            "name":"lock"
+        },
+        {
+            "name":"link"
+        },
+        {
+            "name":"headset"
+        },
+        {
+            "name":"check"
+        },
+        {
+            "name":"close"
+        },
+        {
+            "name":"zoom"
+        },
+        {
+            "name":"zoom-in"
+        },
+        {
+            "name":"zoom-out"
+        },
+        {
+            "name":"star"
+        },
+        {
+            "name":"heart"
+        },
+        {
+            "name":"clock"
+        },
+        {
+            "name":"email"
+        },
+        {
+            "name":"wifi"
+        },
+        {
+            "name":"chart"
+        },
+        {
+            "name":"share"
+        },
+        {
+            "name":"24h-line"
+        },
+        {
+            "name":"phone"
+        },
+        {
+            "name":"file"
+        },
+        {
+            "name":"book"
+        },
+        {
+            "name":"visit-card"
+        },
+        {
+            "name":"fax"
+        },
+        {
+            "name":"microphone"
+        }
+    ],
+    "iconsfacilities": [
+        {
+            "name":"building"
+        },
+        {
+            "name":"church"
+        },
+        {
+            "name":"amusement-park"
+        },
+        {
+            "name":"history"
+        },
+        {
+            "name":"train"
+        },
+        {
+            "name":"hotel"
+        },
+        {
+            "name":"satelite"
+        },
+        {
+            "name":"outdoors"
+        },
+        {
+            "name":"to-go-drink"
+        },
+        {
+            "name":"lift"
+        },
+        {
+            "name":"wheelchair"
+        },
+        {
+            "name":"room-service"
+        },
+        {
+            "name":"ice-bucket"
+        },
+        {
+            "name":"chat"
+        },
+        {
+            "name":"paper-pen"
+        },
+        {
+            "name":"martiny-glass"
+        },
+        {
+            "name":"taxi"
+        },
+        {
+            "name":"dog"
+        },
+        {
+            "name":"skyscrapper"
+        },
+        {
+            "name":"trees"
+        },
+        {
+            "name":"subway"
+        },
+        {
+            "name":"bus"
+        },
+        {
+            "name":"parking"
+        },
+        {
+            "name":"cable-car"
+        },
+        {
+            "name":"backpacker"
+        },
+        {
+            "name":"walking-tours"
+        },
+        {
+            "name":"video-camera"
+        },
+        {
+            "name":"photos"
+        },
+        {
+            "name":"suitcase"
+        },
+        {
+            "name":"photo-camera"
+        },
+        {
+            "name":"credit-cards"
+        },
+        {
+            "name":"currency"
+        },
+        {
+            "name":"map"
+        },
+        {
+            "name":"compass"
+        },
+        {
+            "name":"golf"
+        },
+        {
+            "name":"bike-rental"
+        },
+        {
+            "name":"location"
+        },
+        {
+            "name":"search"
+        },
+        {
+            "name":"small-church"
+        },
+        {
+            "name":"points-of-interest"
+        },
+        {
+            "name":"no-photos"
+        },
+        {
+            "name":"eye"
+        },
+        {
+            "name":"non-smoking"
+        },
+        {
+            "name":"sign"
+        },
+        {
+            "name":"store"
+        },
+        {
+            "name":"bag"
+        },
+        {
+            "name":"label"
+        },
+        {
+            "name":"clock"
+        },
+        {
+            "name":"calendar"
+        },
+        {
+            "name":"information"
+        },
+        {
+            "name":"call"
+        },
+        {
+            "name":"chat-buble"
+        },
+        {
+            "name":"support"
+        },
+        {
+            "name":"gastronomy"
+        },
+        {
+            "name":"coffee"
+        },
+        {
+            "name":"cocktail-glas"
+        },
+        {
+            "name":"flag"
+        },
+        {
+            "name":"mobile"
+        },
+        {
+            "name":"mobile-pointer"
+        },
+        {
+            "name":"home"
+        },
+        {
+            "name":"user"
+        },
+        {
+            "name":"lock"
+        },
+        {
+            "name":"headset"
+        },
+        {
+            "name":"star"
+        },
+        {
+            "name":"heart"
+        },
+        {
+            "name":"time"
+        },
+        {
+            "name":"email"
+        },
+        {
+            "name":"chat-bubles"
+        },
+        {
+            "name":"wifi"
+        },
+        {
+            "name":"chart"
+        },
+        {
+            "name":"share"
+        },
+        {
+            "name":"24-hours-line"
+        },
+        {
+            "name":"calling"
+        },
+        {
+            "name":"phone"
+        },
+        {
+            "name":"file"
+        },
+        {
+            "name":"book"
+        },
+        {
+            "name":"visitcard"
+        },
+        {
+            "name":"fax"
+        },
+        {
+            "name":"silence"
+        },
+        {
+            "name":"sound"
+        },
+        {
+            "name":"microphone"
+        },
+        {
+            "name":"micro-out"
+        },
+        {
+            "name":"shouting"
+        }
+    ]
+}

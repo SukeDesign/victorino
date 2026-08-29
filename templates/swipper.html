@@ -1,0 +1,22 @@
+<!-- swipper with images and captions -->
+<section data-handler="free-block" data-method="swipper" id="swipper" class="carousel carousel-fade slide" data-ride="carousel" data-interval="5000">
+    <ol class="carousel-indicators horizontal">
+    {% for key in [6,7,8,5] %}
+        <li data-target="#swipper" data-slide-to="{{ loop.index-1 }}"{% if loop.index == 1 %} class="active"{% endif %}>0{{ loop.index }}</li>
+    {% endfor %}
+    </ol>
+    <div class="carousel-inner">
+    {% for key in [6,7,8,5] %}
+        <div class="carousel-item mb-0{% if loop.index == 1 %} active{% endif %}">
+            <figure>
+                <img src="{{ imagepath }}/hotel-{{ key }}_1500x630.jpg" alt="{{ hotelname }}">
+                <figcaption>
+                    <p class="h5">{{ hotelcity }},{{ hotelcountry }}</p>
+                    <h1>{{ hotelname }}</h1>
+                </figcaption>
+            </figure>
+        </div> 
+    {% endfor %}
+    </div> 
+    {% include "addajet.html" %}
+</section> 

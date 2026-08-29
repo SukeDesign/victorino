@@ -1,0 +1,30 @@
+.availability .lead {
+    line-height: 2.5rem;
+}
+.fc-bookable {
+	opacity: .95;
+	background-color: #048c28!important;
+    border-color: #048c28!important;
+}
+.fc-restricted {
+	opacity: .95;
+	background-color: #ffd115!important;
+    border-color: #ffd115!important;
+}
+.fc-notBookable {
+	opacity: .95;
+	background-color: #9e1040!important;
+    border-color: #9e1040!important;
+}
+.fc-pastDate {
+	opacity: .3;
+	background-color: #333333!important;
+    border-color: #333333!important;
+}
+
+#calendar1 .fc-header-toolbar .fc-button-group button{
+	display: block;
+}
+#calendar2 .fc-header-toolbar .fc-button-group button{
+    display: block;
+}
