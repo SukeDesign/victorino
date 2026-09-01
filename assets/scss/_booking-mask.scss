@@ -1,7 +1,7 @@
 header {
     .hide-on-top { display: none; } // btn-reservation on top-bar
 }
-.addajet-booking-bar {
+.booking-bar {
     position: absolute;
     width:80%;
     top:40%;
@@ -724,7 +724,7 @@ header {
 /* Firefox bugs fix */
 body.moz {
     @media (min-width: 1200px) {
-        .addajet-booking-bar {
+        .booking-bar {
             .searchBoxContainer {
                 max-width: 1400px;
                 #datesContainer1 {

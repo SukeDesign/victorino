@@ -1,15 +1,15 @@
 {
     "themename":"victorino",
-    "hotelname":"Hotel Victorino de Almeida",
+    "hotelname":"Hotel Victorino",
     "imagepath": "assets/images/dyn",
     "csspath": "assets/css",
     "jspath": "assets/js",
     "bookinglink": "https://hotelemea1.direct-reservation.net/en/accommodation",
     "hotelphone": "+123 (0)971 78548-0",
-    "hotelemail": "info@victorino.com",
+    "hotelemail": "email@victorino.com",
     "hotelstreet": "Lorem Ipsum Street no. 123",
     "hotelcity": "Lorem Ipsum City",
-    "hotelcountry": "Malta",
+    "hotelcountry": "Portugal",
     "currency": "€",
     "intro": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero.",
     "teasers": [
@@ -413,7 +413,7 @@
             "title": "Ms. Laya Lillith Pinho",
             "position": "Owner / CEO",
             "email": "manager@victorino.com",
-            "phone": "+49 123 4567-88",
+            "phone": "+351 123 4567-88",
             "socials": [ "facebook","instagram","googleplus" ],
             "text": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Phasellus hendrerit."
             
@@ -425,7 +425,7 @@
             "title": "Chef Mariana Muster",
             "position": "Gastronomy Chef",
             "email": "chef@victorino.com",
-            "phone": "+49 123 4567-9",
+            "phone": "+351 123 4567-9",
             "socials": [ "instagram","twitter" ],
             "text": "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi."
         },
@@ -436,7 +436,7 @@
             "title": "Mr. Victorino de Almeida",
             "position": "Support / Reception",
             "email": "alex@victorino.com",
-            "phone": "+49 123 4567-1",
+            "phone": "+351 123 4567-1",
             "socials": [ "facebook","instagram"],
             "text": "Pellentesque aliquet nibh nec urna. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh."
             
@@ -745,11 +745,11 @@
     ],
     "locations": [
         { 
-            "title":"Lorem Ipsum sky run", 
-            "text" : "Each year there are a great number of winter sport events in and around our Hotel and this year is no exception. With the Victorino de Almeida Sports hosting some of the most iconic downhill skiing competitions, you can be sure to catch a glimpse of the best skiers from around the world this season. However, you may be interested to know that the Victorino de Almeida Sports celebrates a whole assortment of other winter sports too. From husky racing to winter golf, you will be sure to see some great events across the 19/20 ski season! Read on to find out about some of our top picks...",
+            "title":"Secret Sky Garden", 
+            "text" : "Each year there are a great number of summer but also winter events in and around our Hotel and this year is no exception. With the Victorino de Almeida Sports hosting some of the most iconic downhill skiing competitions, you can be sure to catch a glimpse of the best skiers from around the world this season. However, you may be interested to know that the Victorino de Almeida Sports celebrates a whole assortment of other winter sports too. From husky racing to winter golf, you will be sure to see some great events across the 19/20 ski season! Read on to find out about some of our top picks...",
             "link":"location-details.html",
-            "city": "Lorem City, Malta",
-            "phone":"+49 123 456 78 9",
+            "city": "Lisboa, Portugal",
+            "phone":"+351 123 456789",
             "email":"tickets@hotel-victorino.com",
             "hero": "hotel-2",
             "image": "hotel-2"
@@ -758,8 +758,8 @@
             "title": "Grand Hotel Victorino de Almeida" , 
             "text" : "Golf is a sport about constant improvement. The fun and the challenge of this beautiful game is that you can always become better, always shave off a few strokes, always swing with more accuracy. If you are committed to improving your golf game, there are a plethora of golf training aids available for your use...",   
             "link": "location-details.html", 
-            "city": "Lorem Ipsum City, Malta",
-            "phone":"+49 123 456 78 1",
+            "city": "Setúbal, Portugal",
+            "phone":"+351 123 456781",
             "email":"reception@hotel-victorino.com",
             "hero": "hotel-3",
             "image": "hotel-4"
@@ -768,8 +768,8 @@
             "title": "Restaurant Victorino" , 
             "text" : "The Grand Hotel Victorino de Almeida is hosting a Summer of Culture, welcoming you to drink and dine while picking up a new skill. From painting like Mucnh to trying your hand at tenegui, these unique events across the city are sure to inspire. ",   
             "link": "location-details.html" , 
-            "city": "Gotthelffriedrichsgrund, Malta",
-            "phone":"+49 123 456 78 3",
+            "city": "Lisboa, Portugal",
+            "phone":"+351 123 456783",
             "email":"restaurant@hotel-victorino.com",
             "hero": "gastronomy-51",
             "image": "gastronomy-52"

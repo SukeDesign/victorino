@@ -1,10 +1,8 @@
 @font-face {
   font-family: 'directions';
-  src:  url('https://media.busyrooms.co/fonts/icomoon/directions.eot?njtrg4');
-  src:  url('https://media.busyrooms.co/fonts/icomoon/directions.eot?njtrg4#iefix') format('embedded-opentype'),
-    url('https://media.busyrooms.co/fonts/icomoon/directions.ttf?njtrg4') format('truetype'),
-    url('https://media.busyrooms.co/fonts/icomoon/directions.woff?njtrg4') format('woff'),
-    url('https://media.busyrooms.co/fonts/icomoon/directions.svg?njtrg4#directions') format('svg');
+  src: 
+    url('../fonts/directions.woff?njtrg4') format('woff'),
+    url('../fonts/directions.svg?njtrg4#directions') format('svg');
   font-weight: normal;
   font-style: normal;
 }

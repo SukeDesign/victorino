@@ -5,7 +5,7 @@ $black:rgb(0,0,0);
 $grey:rgb(127,127,127);
 
 /* backend variables */
-$primary:rgb(150, 171, 154);//green blue
+$primary:rgb(89, 119, 168);//green blue
 $secondary:rgb(151, 150, 153);// grey
 $third:rgb(239, 193, 141);//yellow
 $fourth:rgb(230, 136, 98);//orange
@@ -117,7 +117,7 @@ $footer-color:$white;
 @import "theme";
 @import "responsive";
 @import "datepicker";
-@import "addajet-booking-mask";
+@import "booking-mask";
 // This line needs to be there as last element to insert additional CSS from Theme Config
 // There is no need for an include file with that name
 @import "additionalScss";        

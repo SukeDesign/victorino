@@ -1,10 +1,8 @@
 @font-face {
   font-family: 'facilities';
-  src: url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.eot?55361665');
-  src: url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.eot?55361665#iefix') format('embedded-opentype'),
-       url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.woff?55361665') format('woff'),
-       url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.ttf?55361665') format('truetype'),
-       url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.svg?55361665#icon_set_1') format('svg');
+  src: url('../fonts/facilities.eot?55361665#iefix') format('embedded-opentype'),
+       url('../fonts/facilities.woff?55361665') format('woff'),
+       url('../fonts/facilities.svg?55361665#icon_set_1') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +12,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'facilities';
-    src: url('https://themes.busyrooms.co/themes/victorino/assets/fonts/facilities.svg?55361665#facilities') format('svg');
+    src: url('../fonts/facilities.svg?55361665#facilities') format('svg');
   }
 }
 */
