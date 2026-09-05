@@ -1090,9 +1090,12 @@ main {
                 color: inherit;
             }
             .list-inline-item {
-                padding:5px 10px;
+            padding:1.5rem;
                 i {
-                    font-size: 2rem;
+                    font-size: 3rem;
+                    @media (min-width: 1200px) {
+                        font-size: 6rem;    
+                    }
                 }
             }
         }   
@@ -1165,7 +1168,10 @@ main {
                     @extend .mb-4;
                     transition: .2s linear;
                     i {
-                        font-size: 2rem;
+                        font-size: 3rem;
+                        @media (min-width: 1200px) {
+                            font-size: 6rem;    
+                        }
                         vertical-align: middle;
                         margin-right: 0.5rem;
                         transition: .3s ease;
@@ -1355,7 +1361,6 @@ main {
 
                     }
                     small {
-                        display: block;
                         width: 100%;
                         margin:0;
                         padding: 0;
@@ -1894,8 +1899,8 @@ main {
             max-width: 100%;
             display: inline-block;
             margin-top: -200px;
-            margin-bottom: 40px;
-            padding: 0 0 30px;
+            margin-bottom: 0;
+            padding: 0;
             box-shadow: 10px 10px 50px rgba($black,0.25);
             background: $primary;
             overflow: hidden;
@@ -1904,7 +1909,7 @@ main {
             img {
                 float: left;
                 width: 100%;
-                margin-bottom: 40px;
+                margin-bottom: 0;
                 opacity: 0.7;
                 transform: scale(1.05);
                 -webkit-transition: .15s ease-in-out;

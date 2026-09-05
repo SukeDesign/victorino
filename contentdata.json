@@ -405,6 +405,53 @@
             "title":""
         }
     ],
+    "hotelservices": [
+        {
+            "icon":"outdoors",
+            "title":"Outdoor area"
+        },
+        {
+            "icon":"dog",
+            "title":"Pets allowed"
+        },
+        {
+            "icon":"credit-cards",
+            "title":"Creditcards accepted"
+        },
+        {
+            "icon":"room-service",
+            "title":"Room service"
+        },
+        {
+            "icon":"martiny-glass",
+            "title":"Bar"
+        },
+        {
+            "icon":"gastronomy",
+            "title":"Restaurant"
+        },
+        {
+            "icon":"bike-rental",
+            "title":"Bike rental"
+        },
+        {
+            "icon":"store",
+            "title":"Souvenirs"
+        },
+
+        {
+            "icon":"lift",
+            "title":"Lift"
+        },
+        {
+            "icon":"lock",
+            "title":"Safes in room"
+        },
+        {
+            "icon":"wifi",
+            "title":"Free Wifi"
+        }
+    ],
     "contactpersons": [
         {
             "link":"contact-person-details.html",

@@ -89,7 +89,7 @@
                     <h5 class="title">Facilities</h5>
                     <h2>Services in our Hotel</h2>
                     <ul class="list-inline">
-                        {% for service in services %}
+                        {% for service in hotelservices %}
                         {% if service.title %}
                             <li class="list-inline-item">
                                 <i class="icon-service-facilities-{{ service.icon }}"></i>
@@ -306,7 +306,7 @@
             <div class="row">
                 <div class="col-8 mx-auto">
                     <ul class="list-icons">
-                        {% for service in services %}
+                        {% for service in hotelservices %}
                         {% if service.title %}
                         <li>
                             <span>
